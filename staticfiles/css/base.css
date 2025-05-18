@@ -70,3 +70,34 @@ a.nav-link {
 a.nav-link:hover {
     color: var(--white);
 }
+
+.active {
+    border-bottom: 2px solid var(--primary);
+    font-weight: 700;
+    color: var(--white) !important;
+}
+
+.form {
+    width: 60%;
+    margin: 3% auto;
+    border: 6px var(--primary);
+    border-radius: 5px;
+    box-shadow: 0 4px 15px var(--primary);
+}
+
+.my-button {
+    padding: 10px 20px;
+    background-color: var(--primary);
+    color: var(--white);
+    font-weight: 700;
+    font-size: larger;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    border: none;
+    box-sizing: border-box;
+}
+.my-button:hover {
+    background-color: var(--white);
+    color: var(--primary);
+    border: var(--border) var(--primary);
+}
