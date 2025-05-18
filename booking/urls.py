@@ -1,9 +1,8 @@
-from django.contrib import admin
 from django.urls import path
-from booking import views as booking_views
+from . import views 
+
 
 
 urlpatterns = [
-	path('admin/', admin.site.urls),
-	path('', booking_views.index, name='index'),
+    path('', views.index, name='index'),
 ]
