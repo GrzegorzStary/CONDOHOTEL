@@ -1,0 +1,72 @@
+@import url('https://fonts.googleapis.com/css2?family=Ancizar+Serif:ital,wght@0,300..900;1,300..900&family=Noto+Serif:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root {
+    /* Font Families */
+--title: 'Ancizar Serif', Serif;
+--body: 'Noto Serif', Georgia, Serif;
+
+    /* Colors */
+--background: #f7f3e3;
+--secondary: #36393b;
+--primary: #ee772f;
+--buttons: #9984d4;
+--white: #ffffff;
+--black: #000000;
+
+    /* Utils */
+--border: 1px solid;
+}
+
+html, body {
+    height: 100%;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    font-family: var(--body);
+    font-weight: 500;
+
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: var(--title);
+}
+
+main {
+    flex: 1 0 auto;
+    background-color: var(--white);
+}
+
+/* Footer */
+footer {
+    flex-shrink: 0;
+    background-color: var(--secondary);
+    border-top: var(--primary);
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.social-icon {
+    height: 2rem;
+    margin: 1rem;
+}
+
+/* Heder */
+.my-nav {
+    background-color: var(--secondary);
+    color: var(--primary);
+}
+
+a.nav-link {
+    color: var(--primary);
+    font-weight: 700;
+    font-size: larger;
+    flex-direction: column;
+    text-align: center;
+}
+a.nav-link:hover {
+    color: var(--white);
+}
