@@ -13,6 +13,8 @@ import os
 from pathlib import Path
 import dj_database_url
 from pathlib import Path
+import cloudinary
+import cloudinary_storage
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
@@ -226,8 +228,4 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 DEFAULT_FILE_STORAGE = 'cloudinary_storage.storage.MediaCloudinaryStorage'
 CLOUDINARY_URL = os.environ.get('CLOUDINARY_URL')
-
-# For media files
-DEFAULT_FILE_STORAGE = 'cloudinary_storage.storage.MediaCloudinaryStorage'
-
-MEDIA_URL = 'https://res.cloudinary.com/your_cloud_name/media/'
+MEDIA_URL = '/media/'

@@ -22,5 +22,6 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('accounts/', include('allauth.urls')),
     path('djrichtextfield/', include('djrichtextfield.urls')),
-    path('', include(booking_urls), name = 'booking_urls')
+    path('', include(booking_urls), name = 'booking_urls'),
+    path('reviews/', include('reviews.urls')),
 ]
