@@ -13,7 +13,7 @@
     {% for review in reviews %}
     <div class="card text-bg-dark">
         {% if review.image %}
-            <img src="{{ review.image.url }}" class="card-img" alt="{{ review.image_alt }}">
+            <img class="img-valid" src="{{ review.image.url }}" class="card-img" alt="{{ review.image_alt }}">
         {% else %}
             <!-- Placeholder image in case image is NOT uploaded -->
             <img class="img-placeholder" src="{% static 'images/main-logo.webp' %}" class="card-img" alt="Review does not have an image">
