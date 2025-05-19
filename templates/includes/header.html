@@ -25,7 +25,7 @@
                     <a class="nav-link {% if url_name == 'reviews' %}active{% endif %}" href="{% url 'reviews' %}">Reviews</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">About</a>
+                    <a class="nav-link {% if url_name == 'reviews' %}active{% endif %}" href="{% url 'about' %}">About</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link {% if url_name == 'add_review' %}active{% endif %}" href="{% url 'add_review' %}">Add Review</a>
