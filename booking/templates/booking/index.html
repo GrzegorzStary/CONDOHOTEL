@@ -1,1 +1,47 @@
 {% extends 'base.html' %}
+{% load static %}
+
+{% block title %} Home {% endblock %}
+
+{% block content %}
+<div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-inner">
+        <div class="carousel-item active">
+            <img src="static/images/pool.webp" class="img-carousel d-block " alt="Pool area">
+            <div class="carousel-caption ">
+                <p class="text-xxl-start text-carousel">Relax</p>
+            </div>
+        </div>
+        <div class="carousel-item">
+            <img src="static/images/clubhouse.webp" class="img-carousel d-block" alt="Clubhouse">
+            <div class="carousel-caption ">
+                <p class="text-xxl-start text-carousel">Socialize</p>
+            </div>
+        </div>
+        <div class="carousel-item">
+            <img src="static/images/gym.webp" class="img-carousel d-block" alt="Gym">
+            <div class="carousel-caption ">
+                <p class="text-xxl-start text-carousel">Exercise</p>
+            </div>
+        </div>
+        <div class="carousel-item">
+            <img src="static/images/office.webp" class="img-carousel d-block" alt="Office space">
+            <div class="carousel-caption ">
+                <p class="text-xxl-start text-carousel">Work</p>
+            </div>
+        </div>
+        <div class="carousel-item">
+            <img src="static/images/outside.webp" class="img-carousel d-block" alt="Outside building">
+            <div class="carousel-caption ">
+                <p class="text-xxl-start text-carousel">Live</p>
+            </div>
+        </div>
+        <div class="carousel-item">
+            <img src="static/images/view.webp" class="img-carousel d-block" alt="View">
+            <div class="carousel-caption ">
+                <p class="text-xxl-start text-carousel">Enjoy every single day!</p>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}

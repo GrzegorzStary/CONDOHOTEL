@@ -123,3 +123,19 @@ a.nav-link:hover {
     background-color: var(--primary);
     border-radius: 5px;
 }
+
+.img-carousel {
+    width: 100%;
+    height: 600px;
+    border-radius: 5px;
+    box-shadow: 0 4px 15px var(--primary);
+    margin-top: 1%;
+    margin-bottom: 1%;
+}
+
+.text-carousel {
+    text-shadow: #ffffff 0px 0px 5px;
+    font-size: 2rem;
+    font-weight: 700;
+    color: var(--white); 
+}
