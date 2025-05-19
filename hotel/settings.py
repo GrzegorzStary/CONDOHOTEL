@@ -45,12 +45,16 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'django.contrib.sites',
+    'djrichtextfield',
     'allauth',
     'allauth.account',
     'allauth.socialaccount',
     
     # MY APPS
     'booking',
+    'reservation',
+    'rooms',
+    'reviews',
     
     # OTHER APPS
     'ckeditor',
@@ -63,6 +67,20 @@ INSTALLED_APPS = [
 ]
 
 SITE_ID = 1
+
+DJANGORICHTEXTFIELD_CONFIG = {
+    'js': ['//cdn.ckeditor.com/4.20.1/standard/ckeditor.js'],
+    'int_template': 'djrichtextfield/init/ckeditor.js',
+    'settings': {
+        'toolbar': [
+            ['Format', 'Bold', 'Italic', 'Underline'],
+            ['NumberedList', 'BulletedList'],
+            ['Undo', 'Redo'],
+            ['Maximize']
+        ],
+        'format_tags': 'p;h1;h2;h3',
+    }
+} 
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
@@ -206,11 +224,8 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 # Cloudinary settings
 
-CLOUDINARY_STORAGE = {
-    'CLOUD_NAME': 'your_cloud_name',
-    'API_KEY': 'your_api_key',
-    'API_SECRET': 'your_api_secret',
-}
+DEFAULT_FILE_STORAGE = 'cloudinary_storage.storage.MediaCloudinaryStorage'
+CLOUDINARY_URL = os.environ.get('CLOUDINARY_URL')
 
 # For media files
 DEFAULT_FILE_STORAGE = 'cloudinary_storage.storage.MediaCloudinaryStorage'
