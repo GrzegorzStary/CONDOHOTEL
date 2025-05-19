@@ -1,0 +1,9 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %} 404 Not Found {% endblock %}
+<img class="image-404" src="static/images/logo.webp" alt="logo">
+<a href="{% url 'index' %}" class="book-button z-3 position-absolute top-50 start-50 translate-middle p-2 rounded-3 text-decoration-none">TAKE ME BACK HOME!
+</a>   
+
+{% block content %}
