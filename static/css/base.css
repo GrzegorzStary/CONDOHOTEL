@@ -101,3 +101,18 @@ a.nav-link:hover {
     color: var(--primary);
     border: var(--border) var(--primary);
 }
+
+.card {
+    width: 70%;
+    margin: 3% auto;
+    border: 6px var(--primary);
+    border-radius: 5px;
+    box-shadow: 0 4px 15px var(--primary);
+}
+
+.img-placeholder {
+    width: 0%;
+    height: 200px;
+    background-color: var(--primary);
+    border-radius: 5px;
+}
