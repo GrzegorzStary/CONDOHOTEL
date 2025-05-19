@@ -2,22 +2,23 @@
 
 :root {
     /* Font Families */
---title: 'Ancizar Serif', Serif;
---body: 'Noto Serif', Georgia, Serif;
+    --title: 'Ancizar Serif', Serif;
+    --body: 'Noto Serif', Georgia, Serif;
 
     /* Colors */
---background: #f7f3e3;
---secondary: #36393b;
---primary: #ee772f;
---buttons: #9984d4;
---white: #ffffff;
---black: #000000;
+    --background: #f7f3e3;
+    --secondary: #36393b;
+    --primary: #ee772f;
+    --buttons: #9984d4;
+    --white: #ffffff;
+    --black: #000000;
 
     /* Utils */
---border: 1px solid;
+    --border: 1px solid;
 }
 
-html, body {
+html,
+body {
     height: 100%;
 }
 
@@ -29,7 +30,12 @@ body {
 
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
     font-family: var(--title);
 }
 
@@ -67,6 +73,7 @@ a.nav-link {
     flex-direction: column;
     text-align: center;
 }
+
 a.nav-link:hover {
     color: var(--white);
 }
@@ -96,6 +103,7 @@ a.nav-link:hover {
     border: none;
     box-sizing: border-box;
 }
+
 .my-button:hover {
     background-color: var(--white);
     color: var(--primary);
@@ -144,14 +152,14 @@ a.nav-link:hover {
     text-shadow: #ffffff 0px 0px 5px;
     font-size: 2rem;
     font-weight: 700;
-    color: var(--white); 
+    color: var(--white);
 }
 
 .text-carousel:hover {
     text-shadow: #ffffff 0px 0px 20px;
 }
 
-.book-button{
+.book-button {
     padding: 10px 20px;
     background-color: var(--primary);
     color: var(--white);
@@ -161,10 +169,47 @@ a.nav-link:hover {
     margin-bottom: 10px;
     border: none;
     box-sizing: border-box;
-} 
+}
 
 .book-button:hover {
     background-color: var(--white);
     color: var(--primary);
     border: var(--primary);
+}
+
+.book-button-about {
+    padding: 10px 20px;
+    background-color: var(--primary);
+    color: var(--white);
+    font-weight: 700;
+    font-size: larger;
+    border-radius: 5px;
+    border: none;
+    display: inline-flex;
+    /* keeps size tight */
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    cursor: pointer;
+}
+
+.book-button-about:hover {
+    background-color: var(--white);
+    color: var(--primary);
+    border: var(--primary);
+    border-radius: 5px;
+}
+
+
+.about-text {
+    font-size: 1.5rem;
+    font-weight: 500;
+    color: var(--secondary);
+    margin: 2% auto;
+}
+
+.about-h4 {
+    font-size: 2rem;
+    font-weight: 700;
+    color: var(--primary);
 }

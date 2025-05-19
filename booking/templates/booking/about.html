@@ -1,24 +1,35 @@
 {% extends 'base.html' %}
 {% load static %}
 
-{% block title %} About {% endblock %}
+{% block title %}About{% endblock %}
 
 {% block content %}
-
-<section id="about" class="py-5 bg-light">
+<section>
     <div class="container">
-      <div class="row justify-content-center text-center">
-        <div class="col-lg-8">
-          <h2 class="mb-4">About Stary Condohotel</h2>
-          <p class="lead">
-            Welcome to <strong>Stary Condohotel</strong>, your luxury retreat in the heart of Puerto Princesa, Palawan. We offer elegant, home-style accommodations for short, mid, and long-term stays — perfect for leisure travelers, professionals, and remote workers.
-          </p>
-          <p>
-            Relax in our <strong>resort-style pool</strong>, stay active in the <strong>fully equipped gym</strong>, and enjoy peace of mind with <strong>24/7 security</strong>. With <strong>on-site parking</strong>, modern <strong>office spaces</strong>, and hotel-style service, Stary Condohotel blends comfort and convenience for a truly elevated stay.
-          </p>
-          <h4 class="mt-4 fst-italic text-primary">Live, work, and unwind in style.</h4>
+        <div class="row justify-content-center text-center">
+            <div class="col-lg-8">
+                <br>
+                <br>
+                <h2 class="about-h4 mb-4">About Stary Condohotel</h2>
+                <p class="about-text lead">
+                    Welcome to <strong>Stary Condohotel</strong>, your luxury retreat in the heart of Puerto Princesa,
+                    Palawan. We offer elegant, home-style accommodations for short, mid, and long-term stays — perfect
+                    for leisure travelers, professionals, and remote workers.
+                </p>
+                <p class="about-text">
+                    Relax in our <strong>resort-style pool</strong>, stay active in the <strong>fully equipped
+                        gym</strong>, and enjoy peace of mind with <strong>24/7 security</strong>. With <strong>on-site
+                        parking</strong>, modern <strong>office spaces</strong>, and hotel-style service, Stary
+                    Condohotel blends comfort and convenience for a truly elevated stay.
+                </p>
+                <h4 class="about-h4 mt-4 fst-italic">Live, work, and unwind in style.</h4>
+            </div>    
         </div>
-      </div>
     </div>
-  </section>
-  
+</section>
+<div class="d-flex justify-content-center mt-4">
+    <a href="#" class="book-button-about text-decoration-none">
+        BOOK NOW!
+    </a>
+  </div>  
+{% endblock %}

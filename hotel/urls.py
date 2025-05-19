@@ -17,11 +17,15 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path, include
 from booking import urls as booking_urls
+from .views import about_view, contact_view, error_404_view
 
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('accounts/', include('allauth.urls')),
     path('djrichtextfield/', include('djrichtextfield.urls')),
-    path('', include(booking_urls), name = 'booking_urls'),
+    path('', include(booking_urls), name='booking_urls'),
     path('reviews/', include('reviews.urls')),
+    path('about/', about_view, name='about'),
+    path('contact/', contact_view, name='contact'),
+    path('404/', error_404_view, name='404'),
 ]
