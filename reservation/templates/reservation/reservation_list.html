@@ -1,44 +1,12 @@
 {% extends 'base.html' %}
-{% block title %}Availabilty
-{% endblock title %}
-{% block body %}
+{% load static %}
 
-<!--Booking Section starts here-->
 
-<section>
-  <div class="container-fluid py-5 px-5 ">
-    <form action="" method="POST">
-      {% csrf_token %}
-      {% load app_tags %}
-      <div class="row justify-content-center py-5 bg-light">
-        <div class="col-lg-2">
-          <label for="">Check in</label>
-          <input class="form-control mr-sm-2" type="date" placeholder="Check in" name="cin" min={%todays_date%} max={%
-            max_date %} aria-label="Search" required="True">
-        </div>
-        <div class="col-lg-2">
-          <label for="">Check Out</label>
-          <input class="form-control mr-sm-2" type="date" placeholder="Check out" name="cout" min={%tommorow%} max={%
-            max_date%} aria-label="Search" required="True">
-        </div>
-        <div class="col-lg-2">
-          <label for="">Guests</label>
-          <input class="form-control mr-sm-2" type="number" min="1" placeholder="Guests number" name="capacity"
-            aria-label="Search" required="True">
-        </div>
-        <div class="col-lg-2">
+{% block title %} reservation{% endblock %}
 
-          <input type="submit" value="Check Availabilty" class="form-control mr-sm-2 btn btn-primary my-4"
-            style="position: relative;top: 7px;">
-        </div>
-        {% if rooms %}
-        <p class="text-center text-success">Rooms Available</p>
-        {% endif %}
 
-      </div>
-    </form>
-  </div>
-</section>
-<!--Booking Section ends here-->
+{% block content %}
+
+<h1 class="text-center">reservation list</h1>
 
 {% endblock %}
