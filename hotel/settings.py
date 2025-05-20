@@ -66,6 +66,7 @@ INSTALLED_APPS = [
     'cloudinary',
     "crispy_forms",
     "crispy_bootstrap5",
+    "django-mathfilters",
 ]
 
 SITE_ID = 1

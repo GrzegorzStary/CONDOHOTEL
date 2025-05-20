@@ -12,6 +12,7 @@ django-ckeditor-5==0.2.15
 django-cloudinary-storage==0.3.0
 django-crispy-forms==2.4
 django-js-asset==3.1.2
+django-mathfilters==1.0.0
 django-resized==1.0.3
 django-richtextfield==1.6.2
 gunicorn==23.0.0
@@ -20,6 +21,7 @@ packaging==25.0
 pillow==11.0.0
 psycopg2==2.9.10
 requests==2.32.3
+setuptools==80.3.1
 six==1.17.0
 sqlparse==0.5.3
 urllib3==2.4.0
