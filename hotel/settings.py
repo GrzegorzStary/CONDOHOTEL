@@ -51,14 +51,6 @@ INSTALLED_APPS = [
     'allauth',
     'allauth.account',
     'allauth.socialaccount',
-    
-    # MY APPS
-    'booking',
-    'reservation',
-    'rooms',
-    'reviews',
-    
-    # OTHER APPS
     'ckeditor',
     'ckeditor_uploader',
     "django_ckeditor_5",
@@ -66,6 +58,13 @@ INSTALLED_APPS = [
     'cloudinary',
     "crispy_forms",
     "crispy_bootstrap5",
+    
+    
+    # MY APPS
+    'booking',
+    'reservation',
+    'rooms',
+    'reviews',
 ]
 
 SITE_ID = 1

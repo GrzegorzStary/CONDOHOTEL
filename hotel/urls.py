@@ -24,9 +24,9 @@ urlpatterns = [
     path('accounts/', include('allauth.urls')),
     path('djrichtextfield/', include('djrichtextfield.urls')),
     path('', include(booking_urls), name='booking_urls'),
+    path('rooms/', include('rooms.urls')),
     path('reviews/', include('reviews.urls')),
     path('about/', about_view, name='about'),
     path('contact/', contact_view, name='contact'),
-    path('404/', error_404_view, name='404'),
     path('reservation/', include('reservation.urls'), name='reservation_urls'),
 ]
