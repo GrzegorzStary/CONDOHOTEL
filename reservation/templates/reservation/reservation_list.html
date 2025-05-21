@@ -7,38 +7,46 @@
 
 {% block content %}
 
-<h1 class="text-center">Reserve your room</h1>
+<h1 class="text-center">Reserve your room:</h1>
 
 <section>
-    <div class="container-fluid py-5 px-5 ">
-        <form action="" method="POST">
-            {% csrf_token %}
+    <div class="container-fluid py-5 px-5">
+        {% if messages %}
+            {% for message in messages %}
+                <script>alert("{{ message }}");</script>
+            {% endfor %}
+        {% endif %}
 
+        <form method="POST">
+            {% csrf_token %}
             <div class="row justify-content-center py-5 bg-light">
                 <div class="col-lg-2">
-                    <label for="">Check in</label>
-                    <input class="form-control mr-sm-2" type="date" placeholder="Check in" name="cin"
-                           min="{{ todays_date }}" max="{{ max_date }}" required>
+                    {{ form.full_name.label_tag }}
+                    {{ form.full_name }}
                 </div>
                 <div class="col-lg-2">
-                    <label for="">Check Out</label>
-                    <input class="form-control mr-sm-2" type="date" placeholder="Check out" name="cout"
-                           min="{{ tommorow }}" max="{{ max_date }}" required>
+                    {{ form.check_in.label_tag }}
+                    {{ form.check_in }}
                 </div>
                 <div class="col-lg-2">
-                    <label for="">Guests</label>
-                    <input class="form-control mr-sm-2" type="number" min="1" placeholder="Guests number"
-                           name="capacity" required>
+                    {{ form.check_out.label_tag }}
+                    {{ form.check_out }}
                 </div>
                 <div class="col-lg-2">
-                    <input type="submit" value="Check Availability"
-                           class="form-control mr-sm-2 btn btn-primary my-4"
-                           style="position: relative; top: 7px;">
+                    {{ form.guests.label_tag }}
+                    {{ form.guests }}
                 </div>
-
-                {% if rooms %}
-                    <p class="text-center text-success">Rooms Available</p>
-                {% endif %}
+                <div class="col-lg-2">
+                    {{ form.room_type.label_tag }}
+                    {{ form.room_type }}
+                </div>
+                <div class="col-lg-4 mt-2">
+                    {{ form.additional_info.label_tag }}
+                    {{ form.additional_info }}
+                </div>
+                <div class="col-lg-2">
+                    <input type="submit" value="Reserve" class="form-control btn btn-primary my-4">
+                </div>
             </div>
         </form>
     </div>
