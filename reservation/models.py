@@ -26,6 +26,9 @@ class Reservation(models.Model):
     additional_info = models.TextField(blank=True)
     created_at = models.DateTimeField(auto_now_add=True)
 
+    class Meta:
+        ordering = ['-created_at']
+
     def __str__(self):
         return f"Reservation by {self.full_name} from {self.check_in} to {self.check_out}"
 
