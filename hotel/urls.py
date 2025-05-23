@@ -29,4 +29,5 @@ urlpatterns = [
     path('about/', about_view, name='about'),
     path('contact/', contact_view, name='contact'),
     path('reservation/', include('reservation.urls'), name='reservation_urls'),
+    path('djrichtextfield/', include('djrichtextfield.urls')),
 ]
