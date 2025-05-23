@@ -17,8 +17,8 @@ class Review(models.Model):
     Model representing a review.
     """
     user = models.ForeignKey('auth.User', related_name='reviewer', on_delete=models.CASCADE)
-    title = models.CharField(max_length=300, null=False, blank=False)
-    details = models.CharField(max_length=1000, null=False, blank=False)
+    title = models.CharField(max_length=100, null=False, blank=False)
+    details = models.CharField(max_length=300, null=False, blank=False)
     rating = models.IntegerField(choices=RATE_SCORE, null=False, blank=False)
     created_at = models.DateTimeField(auto_now_add=True)
     image_cloudinary = CloudinaryField('image', null=True, blank=True)
