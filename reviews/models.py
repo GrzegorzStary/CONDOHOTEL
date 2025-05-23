@@ -21,6 +21,7 @@ class Review(models.Model):
     details = models.CharField(max_length=1000, null=False, blank=False)
     rating = models.IntegerField(choices=RATE_SCORE, null=False, blank=False)
     created_at = models.DateTimeField(auto_now_add=True)
+    image_cloudinary = CloudinaryField('image', null=True, blank=True)
     image = ResizedImageField(
         size=[400, None], quality=75, 
         upload_to="reviews/", 
@@ -29,7 +30,6 @@ class Review(models.Model):
         blank=True,
         )
     image_alt = models.CharField(max_length=200, null=True, blank=True)
-    image_cloudinary = CloudinaryField('image', null=True, blank=True)
     
     class Meta:
         ordering = ['-created_at']
