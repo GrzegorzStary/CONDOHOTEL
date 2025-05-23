@@ -29,6 +29,7 @@ class Review(models.Model):
         blank=True,
         )
     image_alt = models.CharField(max_length=200, null=True, blank=True)
+    image_cloudinary = CloudinaryField('image', null=True, blank=True)
     
     class Meta:
         ordering = ['-created_at']
