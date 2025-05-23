@@ -213,3 +213,16 @@ a.nav-link:hover {
     font-weight: 700;
     color: var(--primary);
 }
+
+.now-book-now {
+    padding: 10px 20px;
+    background-color: var(--primary);
+    color: var(--white);
+    font-weight: 700;
+    font-size: larger;
+    border-radius: 5px;
+    border: none;
+}
+.about-h4:hover {
+    text-shadow: #ffffff 0px 0px 20px;
+}

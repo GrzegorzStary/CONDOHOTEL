@@ -212,4 +212,6 @@ a.nav-link:hover {
     font-size: 2rem;
     font-weight: 700;
     color: var(--primary);
+    border: var(--primary);
+    border-radius: 5px;
 }
