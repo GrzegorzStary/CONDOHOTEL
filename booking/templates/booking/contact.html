@@ -11,28 +11,39 @@
     <div class="row">
       <!-- Contact Form -->
       <div class="col-md-6">
-        <form action="#" method="post" class="contact-form">
+        <form action="#" method="post" class="contact-form" onsubmit="return showThankYouMessage(event)">
           {% csrf_token %}
           <div class="mb-3">
             <label for="name" class="form-label">Your Name</label>
             <input type="text" id="name" name="name" class="form-control" required>
           </div>
-          
+        
           <div class="mb-3">
             <label for="email" class="form-label">Your Email</label>
             <input type="email" id="email" name="email" class="form-control" required>
           </div>
-          
+        
           <div class="mb-3">
             <label for="message" class="form-label">Message</label>
             <textarea id="message" name="message" rows="5" class="form-control" required></textarea>
           </div>
           <br>
-          <a href="#" class="book-button text-decoration-none">
-            SEND!
-        </a> 
+        
+          <button type="submit" class="book-button text-decoration-none">SEND!</button>
         </form>
-
+        
+        <script>
+          function showThankYouMessage(event) {
+            event.preventDefault();  // Stop normal form submission
+        
+            alert('Thank you for contacting us. We will get back to you soon!');
+        
+            window.location.href = "{% url 'index' %}";  // Redirect to homepage
+        
+            return false;  // Prevent form from submitting
+          }
+        </script>        
+        
         <!-- Contact Info -->
         <div class="contact-info mt-4">
           <p><strong>Email:</strong> info@condohotel.com</p>
