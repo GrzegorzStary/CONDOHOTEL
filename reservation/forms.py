@@ -8,5 +8,4 @@ class ReservationForm(forms.ModelForm):
         widgets = {
             'check_in': forms.DateInput(attrs={'type': 'date'}),
             'check_out': forms.DateInput(attrs={'type': 'date'}),
-            'additional_info': forms.Textarea(attrs={'rows': 2}),
         }
