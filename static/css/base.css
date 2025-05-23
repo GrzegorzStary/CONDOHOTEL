@@ -215,3 +215,14 @@ a.nav-link:hover {
     border: var(--primary);
     border-radius: 5px;
 }
+
+#reserve-cell {
+    font-size: 1.5rem;
+    font-weight: 500;
+    color: var(--secondary);
+    margin: 2% auto;
+    border-radius: 5px;
+    border: var(--primary);
+    box-shadow: 0 4px 15px var(--primary);
+}
+
