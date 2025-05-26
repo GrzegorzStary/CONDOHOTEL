@@ -1,12 +1,11 @@
-{% extends 'base.html' %}
+{% extends "base.html" %}
 {% load static %}
 
-<h1 class="text-center my-5">You you!</h1>
-
-<h2>Press the button below to reserve your accomodation.</h2>
-
-<a href="{% url 'reservation' %}" class="book-button z-3 position-absolute top-50 start-50 translate-middle p-2 rounded-3 text-decoration-none">
-    BOOK NOW!
-</a>     
-
 {% block content %}
+<div class="d-flex flex-column align-items-center">
+    <h1>500 Internal Server Error</h1>
+    <p>Don't worry, this is us not you!</p>
+
+    <a href="{% url 'index' %}" class="btn my-button">Home</a>
+</div>
+{% endblock %}
