@@ -6,7 +6,7 @@
 {% block content %}
 <section class="contact-section">
   <div class="container">
-    <h2 class="text-center mb-4">Contact Us:</h2>
+    <h1 class="text-center mb-4">Contact Us:</h1>
     
     <div class="row">
       <!-- Contact Form -->
@@ -40,16 +40,6 @@
       
           <button type="submit" class="book-button text-decoration-none mt-3">SEND!</button>
         </form>
-        {% if messages %}
-        {% for message in messages %}
-          {% if forloop.first %}
-            <script>
-              alert("{{ message|escapejs }}");
-            </script>
-          {% endif %}
-        {% endfor %}
-      {% endif %}
-      
 
         <!-- Contact Info -->
         <div class="contact-info mt-4">

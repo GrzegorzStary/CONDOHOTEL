@@ -4,11 +4,9 @@
 {% block title %}Reservation{% endblock %}
 
 {% block content %}
-<div id="reserve-cell" class="container">
-    <h1 class="text-center my-5">Reserve Your Room</h1>
-
     <div class="container d-flex justify-content-center">
-        <form method="POST" class="p-5 rounded">
+        <form method="POST" class="p-5 rounded form">
+            <h1 class="text-center">Reserve Your Room</h1>
             {% csrf_token %}
 
             <!-- Row 1 Full Name-->
@@ -58,7 +56,8 @@
             </div>
 
             <div class="mb-4 d-flex flex-column">
-                <label for="id_additional_info" class="form-label" aria-placeholder="Additional Requests">Additional requests:</label>
+                <label for="id_additional_info" class="form-label" aria-placeholder="Additional Requests">Additional
+                    requests:</label>
                 {{ form.additional_info }}
                 {% if form.additional_info.errors %}
                 <div class="text-danger">{{ form.additional_info.errors }}</div>
@@ -70,5 +69,4 @@
             </div>
         </form>
     </div>
-</div>
 {% endblock %}
