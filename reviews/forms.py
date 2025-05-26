@@ -8,11 +8,10 @@ class ReviewForm(forms.ModelForm):
     """
     class Meta:
         model = Review
-        fields = ['title', 'details', 'rating', 'image']
+        fields = ['title', 'details', 'rating']
         title = forms.CharField(max_length=300, required=True)
         details = forms.CharField(widget=RichTextWidget, required=True)
         rating = forms.ChoiceField(required=True)
-        image = forms.ImageField(required=False)
         widgets = {
             'details': forms.Textarea(attrs={'rows': 5}),
         }
@@ -20,5 +19,4 @@ class ReviewForm(forms.ModelForm):
             'title': 'Title',
             'details': 'Details',
             'rating': 'Rating',
-            'image': 'Image',
         }
