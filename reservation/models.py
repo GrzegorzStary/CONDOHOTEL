@@ -1,5 +1,6 @@
 from django.db import models
 from django.contrib.auth.models import User  # Import the built-in User model
+from django.core.validators import MinValueValidator, MaxValueValidator
 
 class Reservation(models.Model):
     ROOM_CHOICES = [
@@ -14,7 +15,7 @@ class Reservation(models.Model):
     full_name = models.CharField(max_length=100)
     check_in = models.DateField()
     check_out = models.DateField()
-    guests = models.PositiveIntegerField()
+    guests = models.PositiveIntegerField(validators=[MinValueValidator(1),MaxValueValidator(5)], default=1)
     room_type = models.CharField(max_length=20, choices=ROOM_CHOICES)
     additional_info = models.TextField(blank=True)
 
