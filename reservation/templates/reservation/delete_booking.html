@@ -1,0 +1,21 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %} Delete Booking{% endblock %}
+
+{% block content %}
+<div class="form-style text-center p-3 m-3">
+    <h1 class="text-center">Confirm Booking Deletion</h1>
+    <form method="post">
+        {% csrf_token %}
+        <p>Are you sure you want to delete Booking: "{{ object.pk }}"?</p>
+        <p>Name: {{ object.full_name }}</p>
+        <p>Room Type: {{ object.get_room_type_display }}</p>
+        <p>Check-in Date: {{ object.check_in }}</p>
+        <p>Check-out Date: {{ object.check_out }}</p>
+        <p>Guests: {{ object.guests }}</p>
+
+        <input type="submit" value="Confirm" class="my-button">
+    </form>
+</div>
+{% endblock %}

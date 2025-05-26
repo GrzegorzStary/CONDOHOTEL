@@ -8,19 +8,6 @@
     <h1 class="text-center my-5">Reserve Your Room</h1>
 
     <div class="container d-flex justify-content-center">
-        {% if messages %}
-        <div class="alert alert-info" role="alert">
-            {% for message in messages %}
-            {{ message }}<br>
-            {% endfor %}
-        </div>
-        {% endif %}
-        {% if messages %}
-        {% for message in messages %}
-        <script>alert("{{ message }}");</script>
-        {% endfor %}
-        {% endif %}
-
         <form method="POST" class="p-5 rounded">
             {% csrf_token %}
 

@@ -1,0 +1,21 @@
+{% extends 'base.html' %}
+{% load static %}
+{% load crispy_forms_tags %}
+
+{% block title %} Edit Booking{% endblock %}
+
+{% block content %}
+
+<div class="container m-3">
+    <h1 class="text-center">Edit Your Booking</h1>
+
+    <form method="POST" action="{% url 'editbooking' object.id %}" class="form mb-2 p-3 form-style">
+        {% csrf_token %}
+        {{ form.media }}
+        {{ form|crispy }}
+        
+        <button type="submit" class="my-button d-flex justify-content-center mt-3">Update Booking</button>
+    </form>
+</div>
+
+{% endblock %}

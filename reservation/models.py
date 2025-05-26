@@ -1,4 +1,5 @@
 from django.db import models
+from django.contrib.auth.models import User  # Import the built-in User model
 
 class Reservation(models.Model):
     ROOM_CHOICES = [
@@ -9,11 +10,12 @@ class Reservation(models.Model):
         ('SUITE', 'Suite'),
     ]
 
+    user = models.ForeignKey(User, on_delete=models.CASCADE, related_name='reservations', null=True) 
     full_name = models.CharField(max_length=100)
     check_in = models.DateField()
     check_out = models.DateField()
     guests = models.PositiveIntegerField()
-    room_type = models.CharField(choices=ROOM_CHOICES)
+    room_type = models.CharField(max_length=20, choices=ROOM_CHOICES)
     additional_info = models.TextField(blank=True)
 
     def __str__(self):
