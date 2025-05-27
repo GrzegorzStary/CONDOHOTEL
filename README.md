@@ -357,3 +357,48 @@ NOTO
 - sycopg2
 - Balsamiq
 - CodeInstitute Database
+
+### DATABASE DESIGN
+- FOR ROOM RESERVATION
+
+| Field            | Type    |
+| ---------------- | -------|
+| id               | INT   |
+| user id         | INT  |
+| full name       | VARCHAR  |
+| check in        | DATE     |
+| check out       | DATE     |
+| guests           | INT    |
+| room type       | VARCHAR |
+| additional info | TEXT   |
+
+- FOR REVIEWS
+
+| Field       | Type       |
+| ----------- | ----------|
+| id          | INT     |
+| user id    | INT     |
+| description | TEXT |
+| title       | VARCHAR      |
+| details     | VARCHAR     |
+| rating      | INT         |
+| created at | DATETIME     |
+
+- FOR CONTACT
+
+| Field       | Type        |
+| ----------- | ---------- |
+| id          | INT         |
+| name        | VARCHAR      |
+| email       | VARCHAR     |
+| message     | TEXT        |
+| created at | DATETIME  |
+
+- FOR USER AUTH
+
+| Field    | Type     |
+| -------- | -------- |
+| id       | INT      |
+| username | VARCHAR  |
+| email    | VARCHAR  |
+| password | VARCHAR  |
