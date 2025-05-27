@@ -94,6 +94,142 @@ NOTO
 
 ### Wireframes
 
+### Home page
+- A large, prominent image carousel showcasing 5 high-resolution images of the building exterior and available amenities.
+- A navigation bar with links to key public pages: Our Rooms, Contact, Reviews, and About.
+- A secondary navigation section (accessible only to logged-in users) with tabs: Add Review, My Bookings, Register, and Login.
+- A footer that includes social media links for easy access to external platforms.
+- A prominently placed "Our Rooms" button centered on the carousel, optimized for better visibility and accessibility, especially on mobile devices.
+
+![home](documentation/images/screenshots/home_page.png)
+
+### Our rooms
+
+- A simple and clear overview of the different room types available.
+- A consistent navigation bar that includes a visual indicator of the current page.
+- A prominent "Book Now" call-to-action button that quickly redirects users to the booking section
+- A uniform footer displayed across all pages for a cohesive browsing experience.
+
+![rooms](documentation/images/screenshots/our_room1.png)
+![rooms](documentation/images/screenshots/our_room2.png)
+![rooms](documentation/images/screenshots/our_room3.png)
+
+### Contact page
+- A simple and easy-to-use contact form for quick inquiries.
+- A consistent navigation bar that includes a visual indicator of the current page.
+- Clearly displayed email address and telephone number for direct communication.
+- An embedded Google Map highlighting our exact location for easy navigation.
+- A uniform footer displayed across all pages for a cohesive browsing experience.
+
+![contact](documentation/images/screenshots/contact.png)
+
+### Reviews page
+
+- A dedicated reviews page showcasing authentic guest experiences and feedback from their stay.
+- A consistent navigation bar that includes a visual indicator of the current page.
+- A uniform footer displayed across all pages for a cohesive browsing experience.
+
+![review](documentation/images/screenshots/review1.png)
+![review](documentation/images/screenshots/review2.png)
+
+### About page
+
+- A description of what our guests can expect from our condohotel.
+- A consistent navigation bar that includes a visual indicator of the current page.
+- A uniform footer displayed across all pages for a cohesive browsing experience.
+- A prominent "Book Now" call-to-action button that quickly redirects users to the booking section
+
+![about](documentation/images/screenshots/about.png)
+
+### Add Review page (accessible if the user is logged in)
+
+- An intuitive form that allows users to rate their stay and share their experience with ease.
+- A submit button that redirects the user to the review page after submission.
+- A consistent navigation bar that includes a visual indicator of the current page.
+- A uniform footer displayed across all pages for a cohesive browsing experience.
+
+![add_review](documentation/images/screenshots/add_review.png)
+
+### My Bookings page (accessible if the user is logged in)
+
+- Here the user can see reservations made if any.
+- A consistent navigation bar that includes a visual indicator of the current page.
+- A uniform footer displayed across all pages for a cohesive browsing experience.
+
+
+![my_booking](documentation/images/screenshots/my_booking1.png)
+
+#### Page view displaying a single booking.
+
+- The user can edit or delete their booking.
+- A consistent navigation bar that includes a visual indicator of the current page.
+- A uniform footer displayed across all pages for a cohesive browsing experience.
+
+![my_booking](documentation/images/screenshots/my_booking2.png)
+
+### Register
+
+- Registration form
+- Sign up button
+- A consistent navigation bar
+- A uniform footer displayed across all pages for a cohesive browsing experience.
+
+![registration](documentation/images/screenshots/sign_up.png)
+![registration](documentation/images/screenshots/footer.png)
+
+### Login
+
+- Login form
+- Sign in button
+- A consistent navigation bar
+- A uniform footer displayed across all pages for a cohesive browsing experience.
+
+![login](documentation/images/screenshots/log_in.png)
+
+### Logout
+- Log out message
+- Sign out button
+- A consistent navigation bar
+- A uniform footer displayed across all pages for a cohesive browsing experience.
+
+![logout](documentation/images/screenshots/log_out.png)
+
+### Booking form
+- User-friendly booking form that includes fields for full name, check-in and check-out dates, number of guests, room type selection, and any additional information.
+- A "Reserve" button to finalize and confirm the booking.
+- A consistent navigation bar
+- A uniform footer displayed across all pages for a cohesive browsing experience.
+
+![reservation](documentation/images/screenshots/reservation1.png)
+![reservation](documentation/images/screenshots/reservation2.png)
+
+### Edit Booking
+- User-friendly edit booking form that includes fields for full name, check-in and check-out dates, number of guests, room type selection, and any additional information.
+- A "Update Booking" button to finalize and confirm the edit.
+- A consistent navigation bar
+- A uniform footer displayed across all pages for a cohesive browsing experience.
+
+![edit](documentation/images/screenshots/edit_booking1.png)
+![edit](documentation/images/screenshots/edit_booking2.png)
+
+### Delete Booking
+- Notification message informing the user about the deletion of a specific booking
+- A "Confirm" button to proceed with the deletion
+- A consistent navigation bar
+- A uniform footer displayed across all pages for a cohesive browsing experience.
+
+![delete](documentation/images/screenshots/delete.png)
+
+### Custom 404 page
+
+
+
+### Custom 403 page
+
+
+
+### Custom 500 page
+
 ### Languages
 - HTML
 - CSS
