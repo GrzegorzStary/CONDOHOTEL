@@ -2,6 +2,8 @@
 
 ![screenshot]()
 
+[CONDOHOTEL](https://condohotel-02aa4cf88da7.herokuapp.com/)
+
 STARY CONDOHOTEL is a fully operational web application designed for accommodation services. The platform offers users access to a range of available room types, along with features to create personal accounts, manage profiles, make accommodation bookings, and leave reviews.
 
 In addition to user-focused features, the site provides administrative tools that allow staff to manage bookings and reviews, and make changes on behalf of guests—ensuring a smooth and personalized accommodation booking experience.
@@ -402,3 +404,11 @@ NOTO
 | username | VARCHAR  |
 | email    | VARCHAR  |
 | password | VARCHAR  |
+
+## Testing
+
+For all testing, please refer to the [TESTING.md](TESTING.md) 
+
+## Deployment
+
+The live deployed application can be found deployed on [Heroku](https://condohotel-02aa4cf88da7.herokuapp.com/).
