@@ -19,22 +19,27 @@
                         href="{% url 'index' %}" aria-label="Click to redirect to the home page">Home</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link {% if url_name == 'room-list' %}active{% endif %}" href="{% url 'room-list' %}">Our rooms</a>
+                    <a class="nav-link {% if url_name == 'room-list' %}active{% endif %}"
+                        href="{% url 'room-list' %}">Our rooms</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link {% if url_name == 'contact' %}active{% endif %}" href="{% url 'contact' %}">Contact</a>
+                    <a class="nav-link {% if url_name == 'contact' %}active{% endif %}"
+                        href="{% url 'contact' %}">Contact</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link {% if url_name == 'reviews' %}active{% endif %}" href="{% url 'reviews' %}">Reviews</a>
+                    <a class="nav-link {% if url_name == 'reviews' %}active{% endif %}"
+                        href="{% url 'reviews' %}">Reviews</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link {% if url_name == 'about' %}active{% endif %}" href="{% url 'about' %}">About</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link {% if url_name == 'add_review' %}active{% endif %}" href="{% url 'add_review' %}">Add Review</a>
+                    <a class="nav-link {% if url_name == 'add_review' %}active{% endif %}"
+                        href="{% url 'add_review' %}">Add Review</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link {% if url_name == 'bookings_list' %}active{% endif %}" href="{% url 'bookings_list' %}">My Bookings</a>
+                    <a class="nav-link {% if url_name == 'bookings_list' %}active{% endif %}"
+                        href="{% url 'bookings_list' %}">My Bookings</a>
                 </li>
             </ul>
             <ul class="navbar-nav ms-auto">
