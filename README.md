@@ -94,6 +94,46 @@ NOTO
 <details>
 <summary> Wireframes </summary>
 
+### Home page
+![home](documentation/images/wireframes/HOME.png)
+
+### Our rooms
+![rooms](documentation/images/wireframes/OUR_ROOMS.png)
+
+### Contact
+![contact](documentation/images/wireframes/CONTACT_PAGE.png)
+
+### Reviews
+![reviews](documentation/images/wireframes/REVIEWS.png)
+
+### About
+![about](documentation/images/wireframes/ABOUT.png)
+
+### Add Review
+![add](documentation/images/wireframes/ADD_REVIEW.png)
+
+### My Bookings
+![my_booking](documentation/images/wireframes/YOUR_BOOKING.png)
+
+### Create Booking
+![create_booking](documentation/images/wireframes/CREATE_BOOKING.png)
+
+### Edit Booking
+![edit_booking](documentation/images/wireframes/EDIT_BOOKING.png)
+
+### Delete Booking
+![delete_booking](documentation/images/wireframes/DELETE_BOOKING.png)
+
+### Sign In
+![Sign_in](documentation/images/wireframes/Sign_In.png)
+
+### Sign Out
+![Sign_out](documentation/images/wireframes/Sign_Out.png)
+
+### Sign Up
+![Sign_up](documentation/images/wireframes/Sign_Up.png)
+
+
 </details>
 
 <details>
