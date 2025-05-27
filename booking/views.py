@@ -5,14 +5,21 @@ from .forms import ContactForm
 from django.urls import reverse_lazy
 
 
-
+"""
+This file contains the views for the Booking app.
+It includes views for the index, about, and contact pages.
+"""
 
 class Index(TemplateView):
     template_name = 'booking/index.html'
     
 class About(TemplateView):
     template_name = 'booking/about.html'
-
+"""
+This file contains the views for the Booking app.
+It includes views for the index, about, and contact pages.
+It also includes a view for handling contact form submissions.
+"""
 class ContactView(FormView):
     template_name = 'booking/contact.html'
     form_class = ContactForm

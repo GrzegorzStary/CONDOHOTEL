@@ -5,7 +5,10 @@ from .forms import ReservationForm
 from .models import Reservation 
 from django.views.generic import DeleteView, UpdateView, ListView
 from django.contrib.auth.mixins import LoginRequiredMixin, UserPassesTestMixin
-
+"""This file contains views for the reservation app.
+It includes functionality for creating reservations, viewing bookings,
+editing bookings, and deleting bookings.
+"""
 @login_required
 def reservation_view(request):
     if request.method == 'POST':

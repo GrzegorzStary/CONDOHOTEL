@@ -2,6 +2,9 @@ from django.db import models
 from django.contrib.auth.models import User  # Import the built-in User model
 from django.core.validators import MinValueValidator, MaxValueValidator
 
+"""
+This file contains the Reservation model for the hotel booking system.
+"""
 class Reservation(models.Model):
     ROOM_CHOICES = [
         ('DELUXE', 'Deluxe'),

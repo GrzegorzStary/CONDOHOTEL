@@ -4,6 +4,10 @@ from django_resized import ResizedImageField
 from djrichtextfield.models import RichTextField
 from django.core.validators import MinValueValidator
 # Create your models here.
+"""
+Model representing a room.
+This model is used to create a room with various attributes such as title, details, price, image, and room type.
+"""
 
 ROOM_TYPE = (
     ('single', 'Single'),

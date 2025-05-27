@@ -1,7 +1,9 @@
 from django.shortcuts import render
 
 # Create your views here.
-
+"""
+This file contains the views for the Hotel app.
+"""
 def about_view(request):
     return render(request, 'hotel/about.html')
 
