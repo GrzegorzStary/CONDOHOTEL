@@ -221,14 +221,28 @@ NOTO
 ![delete](documentation/images/screenshots/delete.png)
 
 ### Custom 404 page
+- Notification message informing the user about the error.
+- A "Home" button to proceed to home
+- A consistent navigation bar
+- A uniform footer displayed across all pages for a cohesive browsing experience.
 
-
+![404](documentation/images/screenshots/404.png)
 
 ### Custom 403 page
+- Notification message informing the user about the error.
+- A "Home" button to proceed to home
+- A consistent navigation bar
+- A uniform footer displayed across all pages for a cohesive browsing experience.
 
-
+![403](documentation/images/screenshots/403.png)
 
 ### Custom 500 page
+- Notification message informing the user about the error.
+- A "Home" button to proceed to home
+- A consistent navigation bar
+- A uniform footer displayed across all pages for a cohesive browsing experience.
+
+![500](documentation/images/screenshots/500.png)
 
 ### Languages
 - HTML
