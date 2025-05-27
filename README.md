@@ -107,7 +107,8 @@ NOTO
 - A prominently placed "Our Rooms" button centered on the carousel, optimized for better visibility and accessibility, especially on mobile devices.
 
 ![home](documentation/images/screenshots/home_page.png)
-
+#### MOBILE
+![home_mobile](documentation/images/screenshots/small_screen/home_mobile.png)
 ### Our rooms
 
 - A simple and clear overview of the different room types available.
@@ -118,6 +119,10 @@ NOTO
 ![rooms](documentation/images/screenshots/our_room1.png)
 ![rooms](documentation/images/screenshots/our_room2.png)
 ![rooms](documentation/images/screenshots/our_room3.png)
+#### MOBILE
+
+![rooms_mobile](documentation/images/screenshots/small_screen/Our_room_mobile1.png)
+![rooms_mobile](documentation/images/screenshots/small_screen/Our_room_mobile2.png)
 
 ### Contact page
 - A simple and easy-to-use contact form for quick inquiries.
@@ -127,7 +132,9 @@ NOTO
 - A uniform footer displayed across all pages for a cohesive browsing experience.
 
 ![contact](documentation/images/screenshots/contact.png)
-
+#### MOBILE
+![contact_mobile](documentation/images/screenshots/small_screen/contact_us_mobile.png)
+![contact_mobile](documentation/images/screenshots/small_screen/Contact_us_mobile2.png)
 ### Reviews page
 
 - A dedicated reviews page showcasing authentic guest experiences and feedback from their stay.
@@ -136,6 +143,9 @@ NOTO
 
 ![review](documentation/images/screenshots/review1.png)
 ![review](documentation/images/screenshots/review2.png)
+#### MOBILE
+![review_mobile](documentation/images/screenshots/small_screen/reviews_mobile1.png)
+![review_mobile](documentation/images/screenshots/small_screen/reviews_mobile2.png)
 
 ### About page
 
@@ -145,6 +155,9 @@ NOTO
 - A prominent "Book Now" call-to-action button that quickly redirects users to the booking section
 
 ![about](documentation/images/screenshots/about.png)
+#### MOBILE
+![about_mobile](documentation/images/screenshots/small_screen/about_mobile1.png)
+![about_mobile](documentation/images/screenshots/small_screen/about_mobile2.png)
 
 ### Add Review page (accessible if the user is logged in)
 
@@ -155,6 +168,9 @@ NOTO
 
 ![add_review](documentation/images/screenshots/add_review.png)
 
+#### MOBILE
+![add_review_mobile](documentation/images/screenshots/small_screen/add_review_mobile.png)
+
 ### My Bookings page (accessible if the user is logged in)
 
 - Here the user can see reservations made if any.
@@ -164,6 +180,10 @@ NOTO
 
 ![my_booking](documentation/images/screenshots/my_booking1.png)
 
+#### MOBILE
+
+![my_booking_mobile](documentation/images/screenshots/small_screen/my_booking_mobile_nobooking.png)
+
 #### Page view displaying a single booking.
 
 - The user can edit or delete their booking.
@@ -171,6 +191,9 @@ NOTO
 - A uniform footer displayed across all pages for a cohesive browsing experience.
 
 ![my_booking](documentation/images/screenshots/my_booking2.png)
+
+#### MOBILE
+![my_booking_mobile_booking](documentation/images/screenshots/small_screen/my_booking_mobile.png)
 
 ### Register
 
@@ -182,6 +205,10 @@ NOTO
 ![registration](documentation/images/screenshots/sign_up.png)
 ![registration](documentation/images/screenshots/footer.png)
 
+#### MOBILE
+![registration](documentation/images/screenshots/small_screen/sign_up_mobile1.png)
+![registration](documentation/images/screenshots/small_screen/sign_up_mobile2.png)
+
 ### Login
 
 - Login form
@@ -191,6 +218,9 @@ NOTO
 
 ![login](documentation/images/screenshots/log_in.png)
 
+#### MOBILE
+![login](documentation/images/screenshots/small_screen/sign_in_mobile.png)
+
 ### Logout
 - Log out message
 - Sign out button
@@ -198,6 +228,10 @@ NOTO
 - A uniform footer displayed across all pages for a cohesive browsing experience.
 
 ![logout](documentation/images/screenshots/log_out.png)
+
+#### MOBILE
+
+![logout](documentation/images/screenshots/small_screen/sign_out_mobile.png)
 
 ### Booking form
 - User-friendly booking form that includes fields for full name, check-in and check-out dates, number of guests, room type selection, and any additional information.
@@ -208,6 +242,11 @@ NOTO
 ![reservation](documentation/images/screenshots/reservation1.png)
 ![reservation](documentation/images/screenshots/reservation2.png)
 
+#### MOBILE
+![reservation](documentation/images/screenshots/small_screen/reserve_mobile1.png)
+![reservation](documentation/images/screenshots/small_screen/reserve_mobile2.png)
+
+
 ### Edit Booking
 - User-friendly edit booking form that includes fields for full name, check-in and check-out dates, number of guests, room type selection, and any additional information.
 - A "Update Booking" button to finalize and confirm the edit.
@@ -217,6 +256,10 @@ NOTO
 ![edit](documentation/images/screenshots/edit_booking1.png)
 ![edit](documentation/images/screenshots/edit_booking2.png)
 
+#### MOBILE
+![edit](documentation/images/screenshots/small_screen/edit_booking_mobile1.png)
+![edit](documentation/images/screenshots/small_screen/edit_booking_mobile2.png)
+
 ### Delete Booking
 - Notification message informing the user about the deletion of a specific booking
 - A "Confirm" button to proceed with the deletion
@@ -224,6 +267,9 @@ NOTO
 - A uniform footer displayed across all pages for a cohesive browsing experience.
 
 ![delete](documentation/images/screenshots/delete.png)
+
+#### MOBILE
+![delete](documentation/images/screenshots/small_screen/delete_booking_mobile.png)
 
 ### Custom 404 page
 - Notification message informing the user about the error.
