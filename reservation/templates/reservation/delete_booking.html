@@ -7,7 +7,7 @@
 <!-- Deleting your booking-->
 <div class="form-style text-center p-3 m-3">
     <h1 class="text-center">Confirm Booking Deletion</h1>
-    <form method="post" class="form mb-2">
+    <form method="post" class="form mb-2" aria-label="Delete booking form">
         {% csrf_token %}
         <p>Are you sure you want to delete Booking: "{{ object.pk }}"?</p>
         <p>Name: {{ object.full_name }}</p>
@@ -16,7 +16,7 @@
         <p>Check-out Date: {{ object.check_out }}</p>
         <p>Guests: {{ object.guests }}</p>
 
-        <input type="submit" value="Confirm" class="my-button">
+        <input type="submit" value="Confirm" class="my-button" aria-label="Confirm delete booking button">
     </form>
 </div>
 {% endblock %}

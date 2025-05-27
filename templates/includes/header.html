@@ -19,44 +19,45 @@
                         href="{% url 'index' %}" aria-label="Click to redirect to the home page">Home</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link {% if url_name == 'room-list' %}active{% endif %}"
-                        href="{% url 'room-list' %}">Our rooms</a>
+                    <a class="nav-link {% if url_name == 'room-list' %}active{% endif %}" href="{% url 'room-list' %}"
+                        aria-label="Click to navigate to room list">Our rooms</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link {% if url_name == 'contact' %}active{% endif %}"
-                        href="{% url 'contact' %}">Contact</a>
+                    <a class="nav-link {% if url_name == 'contact' %}active{% endif %}" href="{% url 'contact' %}"
+                        aria-label="Click to visit contact page">Contact</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link {% if url_name == 'reviews' %}active{% endif %}"
-                        href="{% url 'reviews' %}">Reviews</a>
+                    <a class="nav-link {% if url_name == 'reviews' %}active{% endif %}" href="{% url 'reviews' %}"
+                        aria-label="Click to visit reviews page">Reviews</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link {% if url_name == 'about' %}active{% endif %}" href="{% url 'about' %}">About</a>
+                    <a class="nav-link {% if url_name == 'about' %}active{% endif %}" href="{% url 'about' %}"
+                        aria-label="Click to visit about page">About</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link {% if url_name == 'add_review' %}active{% endif %}"
-                        href="{% url 'add_review' %}">Add Review</a>
+                    <a class="nav-link {% if url_name == 'add_review' %}active{% endif %}" href="{% url 'add_review' %}"
+                        aria-label="Click to add a review">Add Review</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link {% if url_name == 'bookings_list' %}active{% endif %}"
-                        href="{% url 'bookings_list' %}">My Bookings</a>
+                        href="{% url 'bookings_list' %}" aria-label="Click to manage your bookings">My Bookings</a>
                 </li>
             </ul>
             <ul class="navbar-nav ms-auto">
                 <li class="nav-item">
                     {% if request.user.is_authenticated %}
                 <li class="nav-item">
-                    <a class="nav-link {% if url_name == 'accounts_logout' %}active{% endif %}"
-                        href="/accounts/logout/">Logout</a>
+                    <a class="nav-link {% if url_name == 'accounts_logout' %}active{% endif %}" href="/accounts/logout/"
+                        aria-label="Click to log out">Logout</a>
                 </li>
                 {% else %}
                 <li class="nav-item">
-                    <a class="nav-link {% if url_name == 'accounts_signup' %}active{% endif %}"
-                        href="/accounts/signup/">Register</a>
+                    <a class="nav-link {% if url_name == 'accounts_signup' %}active{% endif %}" href="/accounts/signup/"
+                        aria-label="Click to register">Register</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link {% if url_name == 'accounts_login' %}active{% endif %}"
-                        href="/accounts/login/">Login</a>
+                    <a class="nav-link {% if url_name == 'accounts_login' %}active{% endif %}" href="/accounts/login/"
+                        aria-label="Click to login">Login</a>
                 </li>
                 {% endif %}
             </ul>

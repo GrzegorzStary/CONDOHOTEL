@@ -7,7 +7,7 @@
 <div class="container m-3">
 
     <!-- Your booking section -->
-    <div class="form-style">
+    <div class="form-style" aria-label="Your bookings section">
         <h1 class="text-center">Your Bookings:</h1>
         <table class="table table-striped table-hover">
             <thead>
@@ -32,10 +32,12 @@
                     <td>{{ booking.guests }}</td>
                     <td>{{ booking.get_room_type_display }}</td>
                     <td>
-                        <a href="{% url 'editbooking' booking.id %}" class="my-button">Edit</a>
+                        <a href="{% url 'editbooking' booking.id %}" class="my-button"
+                            aria-label="Edit your booking button">Edit</a>
                     </td>
                     <td>
-                        <a href="{% url 'delete_booking' booking.id %}" class="my-button">Delete</a>
+                        <a href="{% url 'delete_booking' booking.id %}" class="my-button"
+                            aria-label="Delete your booking button">Delete</a>
                     </td>
                 </tr>
                 {% empty %}

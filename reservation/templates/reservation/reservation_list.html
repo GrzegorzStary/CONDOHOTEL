@@ -6,7 +6,7 @@
 {% block content %}
 <!-- Section for creating a booking-->
 <div class="container d-flex justify-content-center">
-    <form method="POST" class="p-5 rounded form">
+    <form method="POST" class="p-5 rounded form" aria-label="Reservation form">
         <h1 class="text-center">Reserve Your Room</h1>
         {% csrf_token %}
 
@@ -15,7 +15,7 @@
             <div class="">
                 <label for="id_full_name" class="form-label">Full Name</label>
                 <input type="text" name="full_name" id="id_full_name" class="form-control" required
-                    value="{{ form.full_name.value|default_if_none:'' }}">
+                    value="{{ form.full_name.value|default_if_none:'' }}" aria-label="Full Name input field">
                 {% if form.full_name.errors %}
                 <div class="text-danger">{{ form.full_name.errors }}</div>
                 {% endif %}
@@ -25,21 +25,21 @@
         <!-- Row 2 Check in, Check out, Guests-->
         <div>
             <div class="d-flex flex-column">
-                <label for="id_check_in" class="form-label">Check In</label>
+                <label for="id_check_in" class="form-label" aria-label="Check in date">Check In</label>
                 {{ form.check_in }}
                 {% if form.check_in.errors %}
                 <div class="text-danger">{{ form.check_in.errors }}</div>
                 {% endif %}
             </div>
             <div class="d-flex flex-column">
-                <label for="id_check_out" class="form-label">Check Out</label>
+                <label for="id_check_out" class="form-label" aria-label="Check out date">Check Out</label>
                 {{ form.check_out }}
                 {% if form.check_out.errors %}
                 <div class="text-danger">{{ form.check_out.errors }}</div>
                 {% endif %}
             </div>
             <div class="d-flex flex-column">
-                <label for="id_guests" class="form-label">Guests</label>
+                <label for="id_guests" class="form-label" aria-label="Choose number of guests">Guests</label>
                 {{ form.guests }}
                 {% if form.guests.errors %}
                 <div class="text-danger">{{ form.guests.errors }}</div>
@@ -48,7 +48,7 @@
         </div>
         <div>
             <div class="d-flex flex-column">
-                <label for="id_room_type" class="form-label">Room Type</label>
+                <label for="id_room_type" class="form-label" aria-label="Choose room type">Room Type</label>
                 {{ form.room_type }}
                 {% if form.room_type.errors %}
                 <div class="text-danger">{{ form.room_type.errors }}</div>
@@ -57,7 +57,8 @@
         </div>
 
         <div class="mb-4 d-flex flex-column">
-            <label for="id_additional_info" class="form-label" aria-placeholder="Additional Requests">Additional
+            <label for="id_additional_info" class="form-label" aria-placeholder="Additional Requests"
+                aria-label="Provide additional requests if any">Additional
                 requests:</label>
             {{ form.additional_info }}
             {% if form.additional_info.errors %}
@@ -66,7 +67,8 @@
         </div>
 
         <div class="text-center">
-            <button type="submit" class="book-button text-decoration-none mt-3">RESERVE!</button>
+            <button type="submit" class="book-button text-decoration-none mt-3"
+                aria-label="Reserve room button Click to confirm reservation">RESERVE!</button>
         </div>
     </form>
 </div>

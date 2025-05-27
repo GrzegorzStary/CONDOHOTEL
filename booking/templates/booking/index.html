@@ -5,47 +5,52 @@
 
 {% block content %}
 <!--Carousel the first few images when user visit the page-->
-<div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+<div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel" aria-label="Image carousel">
     <div class="carousel-inner">
         <!-- Button to view our rooms -->
         <a href="{% url 'room-list' %}"
-            class="book-button z-3 position-absolute top-50 start-50 translate-middle p-2 rounded-3 text-decoration-none">
+            class="book-button z-3 position-absolute top-50 start-50 translate-middle p-2 rounded-3 text-decoration-none"
+            aria-label="Click to view our rooms">
             OUR ROOMS!
         </a>
         <div class="carousel-item active">
-            <img src="static/images/pool.webp" class="img-carousel d-block " alt="Pool area">
+            <img src="static/images/pool.webp" class="img-carousel d-block " alt="Pool area image"
+                aria-label="Pool Area Image">
             <div class="carousel-caption ">
-                <p class="text-xxl-start text-carousel">Relax</p>
+                <p class="text-xxl-start text-carousel" aria-label="Relax">Relax</p>
             </div>
         </div>
         <div class="carousel-item">
-            <img src="static/images/clubhouse.webp" class="img-carousel d-block" alt="Clubhouse">
+            <img src="static/images/clubhouse.webp" class="img-carousel d-block" alt="Clubhouse image"
+                aria-label="Clubhouse Image">
             <div class="carousel-caption ">
-                <p class="text-xxl-start text-carousel">Socialize</p>
+                <p class="text-xxl-start text-carousel" aria-label="Socialize">Socialize</p>
             </div>
         </div>
         <div class="carousel-item">
-            <img src="static/images/gym.webp" class="img-carousel d-block" alt="Gym">
+            <img src="static/images/gym.webp" class="img-carousel d-block" alt="Gym image" aria-label="Gym Image">
             <div class="carousel-caption ">
-                <p class="text-xxl-start text-carousel">Exercise</p>
+                <p class="text-xxl-start text-carousel" aria-label="Exercise">Exercise</p>
             </div>
         </div>
         <div class="carousel-item">
-            <img src="static/images/office.webp" class="img-carousel d-block" alt="Office space">
+            <img src="static/images/office.webp" class="img-carousel d-block" alt="Office space image"
+                aria-label="Office Space Image">
             <div class="carousel-caption ">
-                <p class="text-xxl-start text-carousel">Work</p>
+                <p class="text-xxl-start text-carousel" aria-label="Work">Work</p>
             </div>
         </div>
         <div class="carousel-item">
-            <img src="static/images/outside.webp" class="img-carousel d-block" alt="Outside building">
+            <img src="static/images/outside.webp" class="img-carousel d-block" alt="Outside building image"
+                aria-label="Outside Building Image">
             <div class="carousel-caption ">
-                <p class="text-xxl-start text-carousel">Live</p>
+                <p class="text-xxl-start text-carousel" aria-label="Live">Live</p>
             </div>
         </div>
         <div class="carousel-item">
-            <img src="static/images/view.webp" class="img-carousel d-block" alt="View">
+            <img src="static/images/view.webp" class="img-carousel d-block" alt="View image" aria-label="View Image">
             <div class="carousel-caption ">
-                <p class="text-xxl-start text-carousel">Enjoy every single day!</p>
+                <p class="text-xxl-start text-carousel" aria-label="Enjoy every single day!">Enjoy every single day!</p>
             </div>
         </div>
     </div>

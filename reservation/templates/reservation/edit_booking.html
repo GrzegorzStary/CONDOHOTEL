@@ -9,12 +9,12 @@
 <div class="container m-3">
     <h1 class="text-center">Edit Your Booking</h1>
 
-    <form method="POST" action="{% url 'editbooking' object.id %}" class="form mb-2 p-3 form-style">
+    <form method="POST" action="{% url 'editbooking' object.id %}" class="form mb-2 p-3 form-style" aria-label="Edit booking form">
         {% csrf_token %}
         {{ form.media }}
         {{ form|crispy }}
 
-        <button type="submit" class="my-button">Update Booking</button>
+        <button type="submit" class="my-button" aria-label="Update Booking button">Update Booking</button>
     </form>
 </div>
 
