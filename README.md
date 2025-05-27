@@ -91,8 +91,13 @@ NOTO
 - As the site owner, I want to see messages that potential quests left by using our contact form.
 
 # Features
+<details>
+<summary> Wireframes </summary>
 
-### Wireframes
+</details>
+
+<details>
+<summary>Existing features</summary>
 
 ### Home page
 - A large, prominent image carousel showcasing 5 high-resolution images of the building exterior and available amenities.
@@ -243,6 +248,7 @@ NOTO
 - A uniform footer displayed across all pages for a cohesive browsing experience.
 
 ![500](documentation/images/screenshots/500.png)
+</details>
 
 ### Languages
 - HTML

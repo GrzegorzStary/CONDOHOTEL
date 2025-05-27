@@ -229,3 +229,80 @@ a.nav-link:hover {
     box-shadow: 0 4px 15px var(--primary);
 }
 
+@media 
+only screen and (max-width: 767px),
+(min-device-width: 768px) and (max-device-width: 1024px) {
+
+    table, thead, tbody, th, td, tr {
+        display: block;
+        width: 100%;
+    }
+
+    thead {
+        display: none;
+    }
+
+
+    /* Prevent mobile styles for empty message row */
+    tr.empty-row {
+        display: table-row;
+        background: transparent;
+        border: none;
+        box-shadow: none;
+        padding: 0;
+        margin: 0;
+    }
+
+    tr.empty-row td {
+        display: table-cell;
+        padding: 1rem;
+        text-align: center;
+        font-weight: 500;
+        font-size: 1rem;
+        color: #555;
+    }
+
+    tr {
+        border: 1px solid #ddd;
+        margin-bottom: 12px;
+        border-radius: 10px;
+        background: #f9f9f9;
+        box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+        padding: 10px;
+    }
+
+    td {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 12px 10px 12px 45%;
+        border-bottom: 1px solid #eee;
+        font-size: 0.95rem;
+        position: relative;
+    }
+
+    td:before {
+        content: attr(data-label);
+        position: absolute;
+        left: 10px;
+        top: 12px;
+        width: 40%;
+        font-weight: 600;
+        font-size: 0.9rem;
+        color: #333;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+
+    td:last-child {
+        border-bottom: none;
+    }
+
+    .my-button {
+        padding: 6px 12px;
+        font-size: 0.9rem;
+        border-radius: 5px;
+        white-space: nowrap;
+    }
+}

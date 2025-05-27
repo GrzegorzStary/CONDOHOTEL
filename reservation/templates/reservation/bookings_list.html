@@ -5,43 +5,44 @@
 
 {% block content %}
 <div class="container m-3">
-
-    <!-- Your booking section -->
+    <!-- Booking section -->
     <div class="form-style" aria-label="Your bookings section">
         <h1 class="text-center">Your Bookings:</h1>
         <table class="table table-striped table-hover">
-            <thead>
+            <thead class="d-none d-md-table-header-group">
                 <tr>
                     <th>Booking ID</th>
-                    <th>Customer Name</th>
+                    <th>Name</th>
                     <th>Check-in</th>
                     <th>Check-out</th>
                     <th>Guests</th>
                     <th>Room Type</th>
-                    <th><span class="sr-only">Edit</span></th>
-                    <th><span class="sr-only">Delete</span></th>
+                    <th>Edit</th>
+                    <th>Delete</th>
                 </tr>
             </thead>
             <tbody>
                 {% for booking in object_list %}
                 <tr>
-                    <td>{{ booking.pk }}</td>
-                    <td>{{ booking.full_name }}</td>
-                    <td>{{ booking.check_in }}</td>
-                    <td>{{ booking.check_out }}</td>
-                    <td>{{ booking.guests }}</td>
-                    <td>{{ booking.get_room_type_display }}</td>
-                    <td>
-                        <a href="{% url 'editbooking' booking.id %}" class="my-button"
-                            aria-label="Edit your booking button">Edit</a>
+                    <td data-label="Booking ID"><br>{{ booking.pk }}</td>
+                    <td data-label="Name"><br>{{ booking.full_name }}</td>
+                    <td data-label="Check-in"><br>{{ booking.check_in }}</td>
+                    <td data-label="Check-out"><br>{{ booking.check_out }}</td>
+                    <td data-label="Guests"><br>{{ booking.guests }}</td>
+                    <td data-label="Room Type"><br>{{ booking.get_room_type_display }}</td>
+                    <td><br>
+                        <a href="{% url 'editbooking' booking.id %}" class="my-button" aria-label="Edit your booking">
+                            Edit
+                        </a>
                     </td>
-                    <td>
-                        <a href="{% url 'delete_booking' booking.id %}" class="my-button"
-                            aria-label="Delete your booking button">Delete</a>
+                    <td><br>
+                        <a href="{% url 'delete_booking' booking.id %}" class="my-button" aria-label="Delete your booking">
+                            Delete
+                        </a>
                     </td>
                 </tr>
                 {% empty %}
-                <tr>
+                <tr class="empty-row">
                     <td colspan="8" class="text-center">No bookings found.</td>
                 </tr>
                 {% endfor %}
