@@ -75,13 +75,18 @@ I have used the [PEP8 CI Python Linter](https://pep8ci.herokuapp.com) to validat
 
 | File | Screenshot | Notes |
 | --- | --- | --- |
-| asgi.py | ![screenshot](documentation/validation/pep8/asgi.py.png) | Pass: No Errors |
-| settings.py | ![screenshot](documentation/validation/pep8/settings.py.png) | Pass: No Errors |
-| urls.py | ![screenshot](documentation/validation/pep8/urls.py.png) | Pass: No Errors |
-| wsgi.py | ![screenshot](documentation/validation/pep8/wsgi.py.png) | Pass: No Errors |
-| admin.py | ![screenshot](documentation/validation/pep8/admin.py.png) | Pass: No Errors |
-| apps.py | ![screenshot](documentation/validation/pep8/apps.py.png) | Pass: No Errors |
-| forms..py | ![screenshot](documentation/validation/pep8/forms.py.png) | Pass: No Errors |
-| models.py | ![screenshot](documentation/validation/pep8/models.py.png) | Pass: No Errors |
-| urls.py - table_booking app | ![screenshot](documentation/validation/pep8/urls2.py.png) | Pass: No Errors |
-| views.py | ![screenshot](documentation/validation/pep8/views.py.png) | Pass: No Errors |
+| apps.py | ![screenshot](documentation/images/testing/python/rooms/rooms_apps.png) | Pass: No Errors |
+| models.py | ![screenshot](documentation/images/testing/python/rooms/rooms_models.png) | Pass: No Errors |
+| urls.py | ![screenshot](documentation/images/testing/python/rooms/rooms_urls.png) | Pass: No Errors |
+| views.py | ![screenshot](documentation/images/testing/python/rooms/rooms_view.png) | Pass: No Errors |
+
+## Browser Compatability
+
+I have tested my site on different browsers to check for any compatability issues.
+
+| Browser | Screenshot | Notes |
+| --- | --- | --- |
+| Chrome | ![screenshot](documentation/images/chrome.png) | Works as expected |
+| Safari | ![screenshot](documentation/images/safari.png) | Works as expected |
+| Firefox | ![screenshot](documentation/images/firefox.png) | Works as expected |
+| Tor | ![screenshot](documentation/images/Tor.png) | Works as expected |
