@@ -123,3 +123,12 @@ I have tested my site on different devices and screen sizes to check for any res
 | Iphone 13| Login | ![screenshot](documentation/images/responsivness/IPHONE_13real/iphone1.PNG) | Works as expected |
 | Iphone 13| Logout| ![screenshot](documentation/images/responsivness/IPHONE_13real/iphone3.PNG) | Works as expected |
 | Iphone 13| Register | ![screenshot](documentation/images/responsivness/IPHONE_13real/iphone2.PNG) | Works as expected |
+
+### Samsung X Cover Pro 6 REAL DEVCE TESTIING - A fev screenshots provided by a friend.
+
+| Device | Screen |Screenshot | Notes |
+| --- | --- | --- | --- |
+| Samsung X Cover Pro 6 | Home page | ![screenshot](documentation/images/responsivness/Samsung_xcover_pro/xcover2.jpg) | Works as expected |
+| Samsung X Cover Pro 6| Our Rooms | ![screenshot](documentation/images/responsivness/Samsung_xcover_pro/xcover1.jpg) | Works as expected |
+| Samsung X Cover Pro 6| Our Rooms 2 | ![screenshot](documentation/images/responsivness/Samsung_xcover_pro/xcover3.jpg) | Works as expected |
+| Samsung X Cover Pro 6| Our Rooms 3 | ![screenshot](documentation/images/responsivness/Samsung_xcover_pro/xcover4.jpg) | Works as expected |
