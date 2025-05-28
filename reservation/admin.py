@@ -4,4 +4,3 @@ from .models import Reservation
 """
 This file is used to register the Reservation model with the Django admin site.
 """
-admin.site.register(Reservation)
