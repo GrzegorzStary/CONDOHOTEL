@@ -10,9 +10,9 @@
         {% csrf_token %}
         {{ form.media }}
         {{ form|crispy }}
-        <div>
+        <div class="text-decoration-none d-flex justify-content-center mt-3">
             <button type="submit" class="my-button" aria-label="Submit your review button">Submit</button>
-        </div>
+        </div>        
     </form>
 </div>
 {% endblock %}
