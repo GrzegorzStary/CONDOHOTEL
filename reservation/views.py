@@ -1,6 +1,5 @@
 from django.shortcuts import render, redirect
 from django.contrib.auth.decorators import login_required
-from django.contrib import messages
 from .forms import ReservationForm
 from .models import Reservation 
 from django.views.generic import DeleteView, UpdateView, ListView
@@ -17,7 +16,6 @@ def reservation_view(request):
             reservation = form.save(commit=False)
             reservation.user = request.user
             reservation.save()
-            messages.success(request, "Your reservation has been made!")
             return redirect('/reservations/my-bookings/') # Redirect to the bookings list after successful reservation
         form = ReservationForm()
     else:
@@ -48,7 +46,6 @@ class EditBookingView(LoginRequiredMixin, UserPassesTestMixin, UpdateView):
         return booking.user == self.request.user
 
     def form_valid(self, form):
-        messages.success(self.request, "Your booking has been updated!")
         return super().form_valid(form)
 
 class DeleteBookingView(LoginRequiredMixin, UserPassesTestMixin, DeleteView):
@@ -61,5 +58,4 @@ class DeleteBookingView(LoginRequiredMixin, UserPassesTestMixin, DeleteView):
         return booking.user == self.request.user
 
     def delete(self, request, *args, **kwargs):
-        messages.success(request, "Your booking has been cancelled!")
         return super().delete(request, *args, **kwargs)
