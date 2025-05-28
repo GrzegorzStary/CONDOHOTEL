@@ -107,6 +107,17 @@ I have tested my site on different devices and screen sizes to check for any res
 | Mobile (Devtools)| Book Now | ![screenshot](documentation/images/responsivness/general/responsive7.png) | Works as expected |
 | Mobile (Devtools)| Your Booking | ![screenshot](documentation/images/responsivness/general/responsive8.png) | Works as expected |
 
+### Samsung Galaxy Tab 4
+| Device | Screen |Screenshot | Notes |
+| --- | --- | --- | --- |
+| Samsung Galaxy Tab 4 (Devtools)| Home page | ![screenshot](documentation/images/responsivness/general/tab1.png) | Works as expected |
+| Samsung Galaxy Tab 4 (Devtools)| Our Rooms | ![screenshot](documentation/images/responsivness/general/tab2.png) | Works as expected |
+| Samsung Galaxy Tab 4 (Devtools)| Contact Us | ![screenshot](documentation/images/responsivness/general/tab3.png) | Works as expected |
+| Samsung Galaxy Tab 4 (Devtools)| Reviews | ![screenshot](documentation/images/responsivness/general/tab4.png) | Works as expected |
+| Samsung Galaxy Tab 4 (Devtools)| Add Review | ![screenshot](documentation/images/responsivness/general/tab5.png) | Works as expected |
+| Samsung Galaxy Tab 4 (Devtools)| Edit Booking | ![screenshot](documentation/images/responsivness/general/tab6.png) | Works as expected |
+| Samsung Galaxy Tab 4 (Devtools)| Delete Booking | ![screenshot](documentation/images/responsivness/general/tab7.png) | Works as expected |
+
 ### Iphone 13 REAL DEVICE TESTING
 
 | Device | Screen |Screenshot | Notes |
@@ -124,7 +135,7 @@ I have tested my site on different devices and screen sizes to check for any res
 | Iphone 13| Logout| ![screenshot](documentation/images/responsivness/IPHONE_13real/iphone3.PNG) | Works as expected |
 | Iphone 13| Register | ![screenshot](documentation/images/responsivness/IPHONE_13real/iphone2.PNG) | Works as expected |
 
-### Samsung X Cover Pro 6 REAL DEVCE TESTIING - A fev screenshots provided by a friend.
+### Samsung X Cover Pro 6 REAL DEVCE TESTIING - A few screenshots provided by a friend.
 
 | Device | Screen |Screenshot | Notes |
 | --- | --- | --- | --- |
@@ -132,3 +143,4 @@ I have tested my site on different devices and screen sizes to check for any res
 | Samsung X Cover Pro 6| Our Rooms | ![screenshot](documentation/images/responsivness/Samsung_xcover_pro/xcover1.jpg) | Works as expected |
 | Samsung X Cover Pro 6| Our Rooms 2 | ![screenshot](documentation/images/responsivness/Samsung_xcover_pro/xcover3.jpg) | Works as expected |
 | Samsung X Cover Pro 6| Our Rooms 3 | ![screenshot](documentation/images/responsivness/Samsung_xcover_pro/xcover4.jpg) | Works as expected |
+
