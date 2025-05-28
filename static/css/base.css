@@ -2,8 +2,8 @@
 
 :root {
     /* Font Families */
-    --title: 'Ancizar Serif', Serif;
-    --body: 'Noto Serif', Georgia, Serif;
+    --title: 'Ancizar Serif', serif;
+    --body: 'Noto Serif', Georgia, serif;
 
     /* Colors */
     --background: #f7f3e3;
@@ -48,7 +48,7 @@ main {
 footer {
     flex-shrink: 0;
     background-color: var(--secondary);
-    border-top: var(--primary);
+    border-top: 4px solid var(--primary); /* Fixed: specify border width and style */
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -60,7 +60,7 @@ footer {
     margin: 1rem;
 }
 
-/* Heder */
+/* Header */
 .my-nav {
     background-color: var(--secondary);
     color: var(--primary);
@@ -87,7 +87,7 @@ a.nav-link:hover {
 .form {
     width: 60%;
     margin: 3% auto;
-    border: 6px var(--primary);
+    border: 6px solid var(--primary); /* Fixed: added solid */
     border-radius: 5px;
     box-shadow: 0 4px 15px var(--primary);
 }
@@ -107,13 +107,13 @@ a.nav-link:hover {
 .my-button:hover {
     background-color: var(--white);
     color: var(--primary);
-    border: var(--border) var(--primary);
+    border: 1px solid var(--primary); /* Fixed: specify border width and style */
 }
 
 .card {
     width: 70%;
     margin: 3% auto;
-    border: 6px var(--primary);
+    border: 6px solid var(--primary); /* Fixed: added solid */
     border-radius: 5px;
     box-shadow: 0 4px 15px var(--primary);
 }
@@ -174,7 +174,7 @@ a.nav-link:hover {
 .book-button:hover {
     background-color: var(--white);
     color: var(--primary);
-    border: var(--primary);
+    border: 2px solid var(--primary); /* Fixed: specify border width and style */
 }
 
 .book-button-about {
@@ -196,7 +196,7 @@ a.nav-link:hover {
 .book-button-about:hover {
     background-color: var(--white);
     color: var(--primary);
-    border: var(--primary);
+    border: 2px solid var(--primary); /* Fixed: specify border width and style */
     border-radius: 5px;
 }
 
@@ -212,7 +212,7 @@ a.nav-link:hover {
     font-size: 2rem;
     font-weight: 700;
     color: var(--primary);
-    border: var(--primary);
+    border: 2px solid var(--primary); /* Fixed: specify border width and style */
     border-radius: 5px;
 }
 
@@ -225,13 +225,12 @@ a.nav-link:hover {
     color: var(--secondary);
     margin: 2% auto;
     border-radius: 5px;
-    border: var(--primary);
+    border: 2px solid var(--primary); /* Fixed: specify border width and style */
     box-shadow: 0 4px 15px var(--primary);
 }
 
-@media 
-only screen and (max-width: 767px),
-(min-device-width: 768px) and (max-device-width: 1024px) {
+@media only screen and (max-width: 767px),
+       only screen and (min-width: 768px) and (max-width: 1024px) {
 
     table, thead, tbody, th, td, tr {
         display: block;
@@ -241,7 +240,6 @@ only screen and (max-width: 767px),
     thead {
         display: none;
     }
-
 
     /* Prevent mobile styles for empty message row */
     tr.empty-row {
