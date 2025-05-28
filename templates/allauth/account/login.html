@@ -1,30 +1,31 @@
 {% extends "account/base.html" %}
-
 {% load i18n %}
 
 {% block title %}{% trans "Sign In" %}{% endblock %}
 
 {% block content %}
-<!-- Login page-->
-<div class="container text-center">
+<!-- Login page -->
+<div class="container text-center my-5">
   <h1>{% trans "Sign In" %}</h1>
 
-  <p>{% blocktrans %}If you have not created an account yet, then please
-    <a href="{{ signup_url }}">sign up</a> first.{% endblocktrans %}
+  <p>
+    {% blocktrans %}If you have not created an account yet, then please
+    <a href="{{ signup_url }}" aria-label="Click to sign up">sign up</a> first.{% endblocktrans %}
   </p>
 
-
-  <form class="form p-2" method="POST" action="{% url 'account_login' %}" aria-label="Sign in form">
-    {% if form.media %}
-    {{ form.media }}
-    {% endif %}
+  <form class="form p-2 mx-auto" method="POST" action="{% url 'account_login' %}" aria-label="Sign in form" style="max-width: 500px;">
     {% csrf_token %}
-    {{ form|crispy }}
-    {% if redirect_field_value %}
-    <input type="hidden" name="{{ redirect_field_name }}" value="{{ redirect_field_value }}" />
+    {% if form.media %}
+      {{ form.media }}
     {% endif %}
-    <div>
-      <button class="my-button" type="submit" aria-label="Sign in button">{% trans "Sign In" %}</button>
+    {{ form|crispy }}
+
+    {% if redirect_field_value %}
+      <input type="hidden" name="{{ redirect_field_name }}" value="{{ redirect_field_value }}" />
+    {% endif %}
+
+    <div class="mt-3">
+      <button class="btn my-button" type="submit" aria-label="Sign in button">{% trans "Sign In" %}</button>
     </div>
   </form>
 </div>
