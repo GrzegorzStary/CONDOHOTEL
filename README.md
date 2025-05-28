@@ -526,4 +526,18 @@ The local version, created on Gitpod, does not have the functionality to send co
 
 ### Media
 
+| Source | Location | Type | Notes |
+| --- | --- | --- | --- |
+| [HubSpot](https://www.hubspot.com/) | entire site | Image / Color pattern| LOGO GENERATOR
+| [Google Fonts](https://fonts.google.com/) | entire site | fonts | Fonts |
+| [UXWING](https://uxwing.com) | entire site | social media icon | icons
+| [Bootstrap](https://getbootstrap.com) | entire site | styling | styles / forms
+| [PRIVATE COLLECTION]() | Carousel image/ Room Images | image | all images
+
 ### Acknowledgements
+
+- Firstly I would like to thank to myself for perstistance and not giving up in creating this project.
+- Big thank you to the Code Institute and my Teacher Tom Cowen for providing me with easy to understand knowledge.
+- Thank you to my mentor Gareth for providing me with important feedback, as well as improvement ideas.
+- Thank to my wife for taking care of our child so that I could focus and make that website happen.
+- Thank you to all the people that found little bit of time in theirs busy lifes to test my website and give me some ideas what could be changed and adjusted.
