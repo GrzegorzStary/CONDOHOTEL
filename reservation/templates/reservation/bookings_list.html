@@ -1,7 +1,7 @@
 {% extends 'base.html' %}
 {% load static %}
 
-{% block title %} -Your Bookings{% endblock %}
+{% block title %} Your Bookings{% endblock %}
 
 {% block content %}
 <div class="container m-3">
@@ -30,30 +30,34 @@
                     <td data-label="Check-out"><br>{{ booking.check_out }}</td>
                     <td data-label="Guests"><br>{{ booking.guests }}</td>
                     <td data-label="Room Type"><br>{{ booking.get_room_type_display }}</td>
-                    <td><br>
-                        <a href="{% url 'editbooking' booking.id %}" class="my-button" aria-label="Edit your booking">
+                    <td>
+                        <a href="{% url 'editbooking' booking.id %}" class="btn my-button" aria-label="Edit your booking">
                             Edit
                         </a>
                     </td>
-                    <td><br>
-                        <a href="{% url 'delete_booking' booking.id %}" class="my-button"
-                            aria-label="Delete your booking">
+                    <td>
+                        <a href="{% url 'delete_booking' booking.id %}" class="btn my-button" aria-label="Delete your booking">
                             Delete
                         </a>
                     </td>
                 </tr>
                 {% empty %}
-                    <tr class="empty-row">
-                        <td colspan="8" class="text-center">No bookings found.</td>
-                    </tr>
-                    <a href="{% url 'reservation' %}"
-                        class="book-button z-3 position-absolute top-50 start-50 translate-middle p-2 rounded-3 text-decoration-none"
-                        aria-label="Click to book now">
-                        BOOK NOW!
-                    </a>
-                    {% endfor %}
+                <tr class="empty-row">
+                    <td colspan="8" class="text-center">No bookings found.</td>
+                </tr>
+                {% endfor %}
             </tbody>
         </table>
+
+        {% if not object_list %}
+        <div class="text-center mt-4">
+            <a href="{% url 'reservation' %}"
+               class="my-button px-4 py-2 rounded-3 text-decoration-none"
+               aria-label="Click to book now">
+               BOOK NOW!
+            </a>
+        </div>
+        {% endif %}
     </div>
 </div>
 {% endblock %}
