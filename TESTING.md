@@ -175,3 +175,54 @@ All pages flagged a contrast issue related to the orange button with white text.
 | WAVE | Add Review | ![screenshot](documentation/images/wave/wave_addrev.png) | 
 | WAVE | Logout| ![screenshot](documentation/images/wave/wave_signout.png) |
 
+## Manual Testing
+
+I have thoroughly tested each aspect of the website as shown below.
+
+| **Feature**            | **User Action**                       | **Expected Result**                                                                                            | **Pass/Fail** | **Comments** |
+| ------------------- | ------------------------------------- | -------------------------------------------------------------------------------------------------------------- | ------------- | ------------ |
+| **Navbar**          |                                       |                                                                                                                |               |              |
+|                     | Click on Logo                         | Redirects to the Home page                                                                                     | Pass          |              |
+|                     | Click on Home link                    | Redirects to the Home page                                                                                     | Pass          |              |
+|                     | Click on Our Room link                | Redirects to the Our Room page                                                                                 | Pass          |              |
+|                     | Click on Contact link                 | Redirects to the Contact Form page                                                                             | Pass          |              |
+|                     | Click on Reviews link                 | Redirects to the Reviews page                                                                                  | Pass          |              |
+|                     | Click on About link                   | Redirects to the About page                                                                                    | Pass          |              |
+|                     | Click on Add Review link              | Redirects to the Login page if the user is **not** authenticated; otherwise, redirects to the Add Review page  | Pass          |              |
+|                     | Click on My Bookings link             | Redirects to the Login page if the user is **not** authenticated; otherwise, redirects to the My Bookings page | Pass          |              |
+|                     | Click on Login link                   | Redirects the user to the Login screen                                                                         | Pass          |              |
+|                     | Click on Register link                | Redirects the user to the Registration screen                                                                  | Pass          |              |
+|                     | Click on Logout link                  | Redirects the user to a confirmation screen                                                                    | Pass          |              |
+| **Footer**          |                                       |                                                                                                                |               |              |
+|                     | Click on GITHUB ICON                  | Redirects to the GitHub page, opens in a new tab                                                               | Pass          |              |
+|                     | Click on LINKEDIN ICON                | Redirects to the LinkedIn page, opens in a new tab                                                             | Pass          |              |
+|                     | Click on FACEBOOK ICON                | Redirects to the Facebook page, opens in a new tab                                                             | Pass          |              |
+|                     | Click on INSTAGRAM ICON               | Redirects to the Instagram page, opens in a new tab                                                            | Pass          |              |
+| **OUR ROOM BUTTON** |                                       |                                                                                                                |               |              |
+|                     | Click on OUR ROOM button              | Redirects to the Our Room page                                                                                 | Pass          |              |
+|                     | Scroll to see our rooms               | Page presents a range of room types                                                                            | Pass          |              |
+| **BOOK NOW BUTTON** |                                       |                                                                                                                |               |              |
+|                     | Click on BOOK NOW button              | Redirects to the booking form                                                                                  | Pass          |              |
+|                     | Scroll to see the form                | Form is visible and ready to be filled                                                                         | Pass          |              |
+|                     | Click RESERVE button                  | After submitting the form, the user is redirected to My Bookings                                               | Pass          |              |
+| **Your Bookings**   |                                       |                                                                                                                |               |              |
+|                     | Select a booking from the table       | User selects a booking of interest                                                                             | Pass          |              |
+|                     | Click EDIT button                     | User is redirected to the Edit form                                                                            | Pass          |              |
+|                     | Update your booking                   | User makes changes and clicks **Update Booking**                                                               | Pass          |              |
+|                     | Redirected back to MY BOOKINGS        | User sees the updated booking details                                                                          | Pass          |              |
+|                     | Click DELETE                          | User is redirected to the Confirmation page                                                                    | Pass          |              |
+|                     | Click CONFIRM button                  | Cancellation confirmed, user is redirected to MY BOOKINGS                                                      | Pass          |              |
+|                     | Click BOOK NOW again                  | User can repeat the booking process                                                                            | Pass          |              |
+| **Contact**         |                                       |                                                                                                                |               |              |
+|                     | Fill the Contact Us form              | Form is filled with valid details                                                                              | Pass          |              |
+|                     | Click SEND! button                    | Message is sent, and a confirmation message is shown                                                           | Pass          |              |
+| **Registration**    |                                       |                                                                                                                |               |              |
+|                     | Input valid email, username, password | Fields are completed correctly                                                                                 | Pass          |              |
+|                     | Click Sign-Up button                  | Account is created, user is redirected to the Home page                                                        | Pass          |              |
+**Login**           |                                       |                                                                                                                |               |              |
+|                     | Click on Login button                 | Form appears; user fills in login credentials                                                                  | Pass          |              |
+|                     | Click on Login button again           | Account is logged in                                                                                           | Pass          |              |
+| **Logout**          |                                       |                                                                                                                |               |              |
+|                     | Click on Logout button                | User is redirected to the confirmation page                                                                    | Pass          |              |
+|                     | Click on Logout button again          | Account is logged out                                                                                          | Pass          |              |
+
