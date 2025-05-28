@@ -6,7 +6,7 @@
 {% block content %}
 <div class="container m-3">
     <!-- Booking section -->
-    <div class="form-style" aria-label="Your bookings section">
+    <div class="form-style">
         <h1 class="text-center">Your Bookings:</h1>
         <table class="table table-striped table-hover">
             <thead class="d-none d-md-table-header-group">
@@ -36,16 +36,22 @@
                         </a>
                     </td>
                     <td><br>
-                        <a href="{% url 'delete_booking' booking.id %}" class="my-button" aria-label="Delete your booking">
+                        <a href="{% url 'delete_booking' booking.id %}" class="my-button"
+                            aria-label="Delete your booking">
                             Delete
                         </a>
                     </td>
                 </tr>
                 {% empty %}
-                <tr class="empty-row">
-                    <td colspan="8" class="text-center">No bookings found.</td>
-                </tr>
-                {% endfor %}
+                    <tr class="empty-row">
+                        <td colspan="8" class="text-center">No bookings found.</td>
+                    </tr>
+                    <a href="{% url 'reservation' %}"
+                        class="book-button z-3 position-absolute top-50 start-50 translate-middle p-2 rounded-3 text-decoration-none"
+                        aria-label="Click to book now">
+                        BOOK NOW!
+                    </a>
+                    {% endfor %}
             </tbody>
         </table>
     </div>

@@ -18,10 +18,10 @@ def reservation_view(request):
             reservation.user = request.user
             reservation.save()
             messages.success(request, "Your reservation has been made!")
-            return redirect('reservation') 
+            return redirect('/reservations/my-bookings/') # Redirect to the bookings list after successful reservation
+        form = ReservationForm()
     else:
         form = ReservationForm()
-    
     return render(request, 'reservation/reservation_list.html', {'form': form})
 
 class BookingsList(LoginRequiredMixin, ListView):
