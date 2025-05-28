@@ -13,16 +13,16 @@
     {% for review in reviews %}
     <div class="card text-bg-dark">
         {% if review.image %}
-        <img class="img-valid" src="{{ review.image.url }}" class="card-img" alt="{{ review.image_alt }}">
+        <img class="img-valid card-img" src="{{ review.image.url }}" alt="{{ review.image_alt }}">
         {% else %}
         <!-- Placeholder image in case image is NOT uploaded -->
-        <img class="img-placeholder" src="{% static 'images/main-logo.webp' %}" class="card-img"
+        <img class="img-placeholder card-img" src="{% static 'images/main-logo.webp' %}"
             alt="Review does not have an image">
         {% endif %}
         <div class="card-img-overlay">
             <h2 class="card-title">{{review.title}}</h2>
             <p class="card-text">{{review.details}}</p>
-            <p class="card-text">Rating: {{review.rating}} out of 5 ~~{{review.user}}</p>
+            <p class="card-text">Rating: {{review.rating}} out of 5 &mdash; {{review.user}}</p>
         </div>
     </div>
     {% endfor %}
