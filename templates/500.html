@@ -2,12 +2,10 @@
 {% load static %}
 
 {% block content %}
-<!--Custom 500 page-->
-<div class="d-flex flex-column align-items-center">
+<!-- Custom 500 page -->
+<div class="d-flex flex-column align-items-center text-center my-5">
     <h1>500 Internal Server Error</h1>
-    <p>Don't worry, this is us not you!</p>
-    <p>Your account has been successfully created. Please log in to continue.</p>
-
-    <a href="{% url 'index' %}" class="btn my-button" aria-label="Click to be redirected to home page">Home</a>
+    <p>Oops! Something went wrong on our end. Please try again later.</p>
+    <a href="{% url 'index' %}" class="btn my-button mt-3" aria-label="Click to be redirected to home page">Home</a>
 </div>
 {% endblock %}
