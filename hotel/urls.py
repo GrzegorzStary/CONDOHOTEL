@@ -19,7 +19,7 @@ from django.urls import path, include
 from booking import urls as booking_urls
 from .views import about_view, contact_view, error_404_view
 
-""" 
+"""
 This file contains the URL configuration for the hotel project.
 """
 urlpatterns = [

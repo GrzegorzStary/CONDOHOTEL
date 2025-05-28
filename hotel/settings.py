@@ -21,8 +21,8 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 
 if os.path.exists('env.py'):
     import env
-    
-    
+
+
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/5.2/howto/deployment/checklist/
 
@@ -58,8 +58,8 @@ INSTALLED_APPS = [
     'cloudinary_storage',
     "crispy_forms",
     "crispy_bootstrap5",
-    
-    
+
+
     # MY APPS
     'booking',
     'reservation',
@@ -81,7 +81,7 @@ DJANGORICHTEXTFIELD_CONFIG = {
         ],
         'format_tags': 'p;h1;h2;h3',
     }
-} 
+}
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
@@ -134,12 +134,12 @@ WSGI_APPLICATION = 'hotel.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/5.2/ref/settings/#databases
 
-#DATABASES = {
+# DATABASES = {
 #    'default': {
 #        'ENGINE': 'django.db.backends.sqlite3',
 #        'NAME': BASE_DIR / 'db.sqlite3',
 #    }
-#}
+# }
 
 DATABASES = {
     'default':

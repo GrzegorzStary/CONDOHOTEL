@@ -2,6 +2,7 @@ from django import forms
 from djrichtextfield.widgets import RichTextWidget
 from .models import Review
 
+
 class ReviewForm(forms.ModelForm):
     """
     Form for creating and updating reviews.

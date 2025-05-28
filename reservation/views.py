@@ -1,13 +1,18 @@
 from django.shortcuts import render, redirect
 from django.contrib.auth.decorators import login_required
 from .forms import ReservationForm
-from .models import Reservation 
+from .models import Reservation
 from django.views.generic import DeleteView, UpdateView, ListView
 from django.contrib.auth.mixins import LoginRequiredMixin, UserPassesTestMixin
-"""This file contains views for the reservation app.
+
+
+"""
+This file contains views for the reservation app.
 It includes functionality for creating reservations, viewing bookings,
 editing bookings, and deleting bookings.
 """
+
+
 @login_required
 def reservation_view(request):
     if request.method == 'POST':
@@ -16,14 +21,15 @@ def reservation_view(request):
             reservation = form.save(commit=False)
             reservation.user = request.user
             reservation.save()
-            return redirect('/reservations/my-bookings/') # Redirect to the bookings list after successful reservation
-        form = ReservationForm()
+            return redirect('/reservations/my-bookings/')  # Redirect after successful reservation
     else:
         form = ReservationForm()
+
     return render(request, 'reservation/reservation_list.html', {'form': form})
 
+
 class BookingsList(LoginRequiredMixin, ListView):
-    model = Reservation 
+    model = Reservation
     template_name = 'reservation/bookings_list.html'
     context_object_name = 'bookings'
 
@@ -35,8 +41,9 @@ class BookingsList(LoginRequiredMixin, ListView):
         context['form'] = ReservationForm()
         return context
 
+
 class EditBookingView(LoginRequiredMixin, UserPassesTestMixin, UpdateView):
-    model = Reservation 
+    model = Reservation
     template_name = 'reservation/edit_booking.html'
     form_class = ReservationForm
     success_url = '/reservations/my-bookings/'
@@ -48,8 +55,9 @@ class EditBookingView(LoginRequiredMixin, UserPassesTestMixin, UpdateView):
     def form_valid(self, form):
         return super().form_valid(form)
 
+
 class DeleteBookingView(LoginRequiredMixin, UserPassesTestMixin, DeleteView):
-    model = Reservation 
+    model = Reservation
     template_name = 'reservation/delete_booking.html'
     success_url = '/reservations/my-bookings/'
 

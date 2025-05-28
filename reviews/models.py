@@ -12,6 +12,7 @@ RATE_SCORE = (
     (5, 'EXCELLENT'),
 )
 
+
 class Review(models.Model):
     """
     Model representing a review.
@@ -22,9 +23,10 @@ class Review(models.Model):
     details = models.CharField(max_length=150, null=False, blank=False)
     rating = models.IntegerField(choices=RATE_SCORE, null=False, blank=False)
     created_at = models.DateTimeField(auto_now_add=True)
-    
+
     class Meta:
         ordering = ['-created_at']
 
     def __str__(self):
         return str(self.title)
+

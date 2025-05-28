@@ -17,6 +17,7 @@ ROOM_TYPE = (
     ('family', 'Family'),
 )
 
+
 class Room(models.Model):
     """
     Model representing a room creation.
@@ -27,13 +28,14 @@ class Room(models.Model):
     price = models.DecimalField(max_digits=10, decimal_places=2, validators=[MinValueValidator(1)], null=False, blank=False)
     created_at = models.DateTimeField(auto_now_add=True)
     image = ResizedImageField(
-        size=[400, None], quality=75, 
-        upload_to='rooms/', 
+        size=[400, None], quality=75,
+        upload_to='rooms/',
         force_format='WEBP',
-        null=True, 
+        null=True,
         blank=True,
         )
     image_alt = models.CharField(max_length=200, null=True, blank=True)
     room_type = models.CharField(max_length=100, choices=ROOM_TYPE, default='single', null=False, blank=False)
+
     def __str__(self):
         return self.title
