@@ -144,3 +144,34 @@ I have tested my site on different devices and screen sizes to check for any res
 | Samsung X Cover Pro 6| Our Rooms 2 | ![screenshot](documentation/images/responsivness/Samsung_xcover_pro/xcover3.jpg) | Works as expected |
 | Samsung X Cover Pro 6| Our Rooms 3 | ![screenshot](documentation/images/responsivness/Samsung_xcover_pro/xcover4.jpg) | Works as expected |
 
+## Lighthouse
+
+I've tested my deployed project using the Lighthouse tool to check for issues.
+
+| Page | Size | Screenshot | Notes |
+| --- | --- | --- | --- |
+| Home | Desktop | ![screenshot](documentation/images/lighthouse/light_home.png) | n/a |
+| Our Room | Desktop | ![screenshot](documentation/images/lighthouse/light_room.png) | Small performance issue |
+| Contact| Desktop | ![screenshot](documentation/images/lighthouse/light_contact.png) | Best Practices due to 3rd party cookies (google maps) |
+| Reviews | Desktop | ![screenshot](documentation/images/lighthouse/light_reviews.png) | n/a |
+| Add Review | Desktop | ![screenshot](documentation/images/lighthouse/light_addrev.png) | n/a |
+| Bookings | Desktop | ![screenshot](documentation/images/lighthouse/light_bookings.png) | n/a |
+
+
+
+## WAVE EVALUATION
+
+I tested my deployed project using the WAVE evaluation tool to assess accessibility.
+
+All pages flagged a contrast issue related to the orange button with white text. While this does not meet standard contrast requirements, the button contains large text and is prominently sized. As it aligns with our established design patterns, we have decided to retain this styling.
+
+| TOOL | Screen |Screenshot | 
+| --- | --- | --- | 
+| WAVE | Home page | ![screenshot](documentation/images/wave/wave_home.png) |
+| WAVE | Our Rooms | ![screenshot](documentation/images/wave/wave_rooms.png) | 
+| WAVE | Contact Us | ![screenshot](documentation/images/wave/wave_contact.png) | 
+| WAVE | Reviews | ![screenshot](documentation/images/wave/wave_reviews.png) |
+| WAVE | About | ![screenshot](documentation/images/wave/wave_about.png) |
+| WAVE | Add Review | ![screenshot](documentation/images/wave/wave_addrev.png) | 
+| WAVE | Logout| ![screenshot](documentation/images/wave/wave_signout.png) |
+
