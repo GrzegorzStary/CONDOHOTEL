@@ -90,3 +90,36 @@ I have tested my site on different browsers to check for any compatability issue
 | Safari | ![screenshot](documentation/images/safari.png) | Works as expected |
 | Firefox | ![screenshot](documentation/images/firefox.png) | Works as expected |
 | Tor | ![screenshot](documentation/images/Tor.png) | Works as expected |
+
+## Responsiveness
+
+I have tested my site on different devices and screen sizes to check for any responsiveness problems.
+
+### GENERAL RESPONSIVENESS
+| Device | Screen |Screenshot | Notes |
+| --- | --- | --- | --- |
+| Mobile (Devtools)| Home page | ![screenshot](documentation/images/responsivness/general/responsive1.png) | Works as expected |
+| Mobile (Devtools)| Our Rooms | ![screenshot](documentation/images/responsivness/general/responsive2.png) | Works as expected |
+| Mobile (Devtools)| Contact Us | ![screenshot](documentation/images/responsivness/general/responsive3.png) | Works as expected |
+| Mobile (Devtools)| Reviews | ![screenshot](documentation/images/responsivness/general/responsive4.png) | Works as expected |
+| Mobile (Devtools)| About | ![screenshot](documentation/images/responsivness/general/responsive5.png) | Works as expected |
+| Mobile (Devtools)| Add Review | ![screenshot](documentation/images/responsivness/general/responsive6.png) | Works as expected |
+| Mobile (Devtools)| Book Now | ![screenshot](documentation/images/responsivness/general/responsive7.png) | Works as expected |
+| Mobile (Devtools)| Your Booking | ![screenshot](documentation/images/responsivness/general/responsive8.png) | Works as expected |
+
+### Iphone 13 REAL DEVICE TESTING
+
+| Device | Screen |Screenshot | Notes |
+| --- | --- | --- | --- |
+| Iphone 13 | Home page | ![screenshot](documentation/images/responsivness/IPHONE_13real/iphone12.PNG) | Works as expected |
+| Iphone 13| Our Rooms | ![screenshot](documentation/images/responsivness/IPHONE_13real/iphone11.PNG) | Works as expected |
+| Iphone 13| Contact Us | ![screenshot](documentation/images/responsivness/IPHONE_13real/iphone10.PNG) | Works as expected |
+| Iphone 13| Reviews | ![screenshot](documentation/images/responsivness/IPHONE_13real/iphone9.PNG) | Works as expected |
+| Iphone 13| About | ![screenshot](documentation/images/responsivness/IPHONE_13real/iphone8.PNG) | Works as expected |
+| Iphone 13| Add Review | ![screenshot](documentation/images/responsivness/IPHONE_13real/iphone7.PNG) | Works as expected |
+| Iphone 13| Your Booking | ![screenshot](documentation/images/responsivness/IPHONE_13real/iphone6.PNG) | Works as expected |
+| Iphone 13| Edit Booking | ![screenshot](documentation/images/responsivness/IPHONE_13real/iphone5.PNG) | Works as expected |
+| Iphone 13| Delete Booking | ![screenshot](documentation/images/responsivness/IPHONE_13real/iphone4.PNG) | Works as expected |
+| Iphone 13| Login | ![screenshot](documentation/images/responsivness/IPHONE_13real/iphone1.PNG) | Works as expected |
+| Iphone 13| Logout| ![screenshot](documentation/images/responsivness/IPHONE_13real/iphone3.PNG) | Works as expected |
+| Iphone 13| Register | ![screenshot](documentation/images/responsivness/IPHONE_13real/iphone2.PNG) | Works as expected |
