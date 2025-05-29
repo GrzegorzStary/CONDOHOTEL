@@ -66,10 +66,8 @@ NOTO
 #### First-time User
 - As a first-time user, I want to know where the condo hotel is located.
 - As a first-time user, I want to see room prices and availability.
-- As a first-time user, I want to learn more about the different types of rooms and amenities offered.
 - As a first-time user, I want to understand what experiences and services the condo hotel provides.
 - As a first-time user, I want to view real photos of the rooms and facilities.
-- As a first time user, I want to see video footage.
 - As a first time user, I want to see real peoples reviews.
 - As a first time user I want easly navigate to booking section and create a booking.
 
@@ -90,7 +88,7 @@ NOTO
 - As the site owner, I want users to easily find our location through an interactive map or clear directions.
 - As the site owner, I want to see guests reservations.
 - As the site owner, I want to edit or delete guests reviews.
-- As the site owner, I want to see messages that potential quests left by using our contact form.
+- As the site owner, I want to see messages that potential guests left by using our contact form.
 
 # Features
 <details>

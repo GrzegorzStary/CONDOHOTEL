@@ -226,3 +226,57 @@ I have thoroughly tested each aspect of the website as shown below.
 |                     | Click on Logout button                | User is redirected to the confirmation page                                                                    | Pass          |              |
 |                     | Click on Logout button again          | Account is logged out                                                                                          | Pass          |              |
 
+## User Stories
+
+Each user story has been fulfilled.
+
+### First-time User
+
+| User Story | Screenshot |
+| --- | --- |
+| As a first-time user, I want to know where the condo hotel is located. | ![screenshot](documentation/images/user_stories/first_time/first_user1.png) |
+| As a first-time user, I want to see room prices and availability. | ![screenshot](documentation/images/user_stories/first_time/first_user2.1.png), ![screenshot](documentation/images/user_stories/first_time/first_user2.2.png)|
+| As a first-time user, I want to understand what experiences and services the condo hotel provides. | ![screenshot](documentation/images/user_stories/first_time/first_user3.1.png), ![screenshot](documentation/images/user_stories/first_time/first_user3.2.png) |
+| As a first-time user, I want to view real photos of the rooms and facilities. | ![screenshot](documentation/images/user_stories/first_time/first_user2.2.png) |
+| As a first time user, I want to see real peoples reviews. | ![screenshot](documentation/images/user_stories/first_time/first_user4.png) |
+| As a first time user I want easly navigate to booking section and create a booking. | ![screenshot](documentation/images/user_stories/first_time/first_user5.1.png), ![screenshot](documentation/images/user_stories/first_time/first_user5.2.png), ![screenshot](documentation/images/user_stories/first_time/first_user5.3.png), ![screenshot](documentation/images/user_stories/first_time/first_user5.4.png), ![screenshot](documentation/images/user_stories/first_time/first_user5.5.png) |
+
+### Returning User
+
+| User Story | Screenshot |
+| --- | --- |
+| As a returning user, I want to quickly view the hotel’s location and nearby points of interest. | ![screenshot](documentation/images/user_stories/returning_user/returning_user1.png) |
+| As a returning user, I want an easy way to contact the hotel for questions or updates to my booking. | ![screenshot](documentation/images/user_stories/returning_user/returning_user2.png)|
+| As a returning user, I want to find and follow the condo hotel on social media to stay updated on news and special offers. | ![screenshot](documentation/images/user_stories/returning_user/returning_user3.png) |
+| As a returning user, I want to find my booking. | ![screenshot](documentation/images/user_stories/returning_user/returning_user4.1.png), ![screenshot](documentation/images/user_stories/returning_user/returning_user4.2.png) |
+| As a returning user, I want to edit or delete the booking. | ![screenshot](documentation/images/user_stories/returning_user/returning_user4.1.png), ![screenshot](documentation/images/user_stories/returning_user/returning_user5.1.png) |
+| As a returning user, I want to leave the honest review about my stay. | ![screenshot](documentation/images/user_stories/returning_user/returning_user6.1.png), ![screenshot](documentation/images/user_stories/returning_user/returning_user6.2.png), ![screenshot](documentation/images/user_stories/returning_user/returning_user6.3.png) |
+
+### Returning User
+
+| User Story | Screenshot |
+| --- | --- |
+| As a returning user, I want to quickly view the hotel’s location and nearby points of interest. | ![screenshot]() |
+| As a returning user, I want an easy way to contact the hotel for questions or updates to my booking. | ![screenshot](), ![screenshot]()|
+| As a returning user, I want to find and follow the condo hotel on social media to stay updated on news and special offers. | ![screenshot](), ![screenshot]() |
+| As a returning user, I want to find my booking. | ![screenshot]() |
+| As a returning user, I want to edit or delete the booking. | ![screenshot]() |
+| As a returning user, I want to leave the honest review about my stay. | ![screenshot](), ![screenshot](), ![screenshot](), ![screenshot](), ![screenshot]() |
+
+### Site Owner
+
+| User Story | Screenshot |
+| --- | --- |
+| As the site owner, I want to significantly reduce admin time by making essential information easily accessible on the website. | ![screenshot](documentation/images/user_stories/first_time/first_user2.2.png), ![screenshot](documentation/images/user_stories/returning_user/returning_user2.png), ![screenshot](documentation/images/user_stories/first_time/first_user3.2.png) |
+| As the site owner, I want users to recognize and trust STARY CONDOHOTEL as a reliable and professional accommodation provider. | ![screenshot](documentation/images/user_stories/site_owner/site_owner1.png)|
+| As the site owner, I want users to be able to contact us easily for inquiries, support, or special requests. | ![screenshot](documentation/images/user_stories/returning_user/returning_user2.png)|
+| As the site owner, I want to capture new business opportunities through the contact form and store user data securely. | ![screenshot](documentation/images/user_stories/returning_user/returning_user2.png) |
+| As the site owner, I want users to view high-quality images and videos that accurately represent the rooms, facilities, and surroundings. | ![screenshot](documentation/images/user_stories/first_time/first_user2.2.png), ![screenshot](documentation/images/user_stories/site_owner/site_owner2.png) |
+| As the site owner, I want users to easily find our location through an interactive map or clear directions. | ![screenshot](documentation/images/user_stories/first_time/first_user1.png) |
+| As the site owner, I want to see guests reservations. | ![screenshot](documentation/images/user_stories/site_owner/site_owner3.png) |
+| As the site owner, I want to edit or delete guests reviews. | ![screenshot](documentation/images/user_stories/site_owner/site_owner4.1.png), ![screenshot](documentation/images/user_stories/site_owner/site_owner4.2.png), ![screenshot](documentation/images/user_stories/site_owner/site_owner4.3.png), ![screenshot](documentation/images/user_stories/site_owner/site_owner4.4.png) |
+| As the site owner, I want to see messages that potential guests left by using our contact form. | ![screenshot](documentation/images/user_stories/site_owner/site_owner5.1.png), ![screenshot](documentation/images/user_stories/site_owner/site_owner5.2.png), ![screenshot](documentation/images/user_stories/site_owner/site_owner5.3.png), ![screenshot](documentation/images/user_stories/site_owner/site_owner5.4.png) |
+
+## README
+
+Go back to the [README.md](README.md).
