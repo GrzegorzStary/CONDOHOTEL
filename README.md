@@ -1,6 +1,6 @@
 # STARY CONDOHOTEL
 
-![screenshot]()
+![screenshot](documentation/images/mockup.png)
 
 [CONDOHOTEL](https://condohotel-02aa4cf88da7.herokuapp.com/)
 
@@ -60,6 +60,17 @@ NOTO
 - Accessibility for All Users: The site is designed with accessibility in mind to accommodate all visitors, including those with disabilities.
 - Photo Gallery: High-quality images showcasing rooms, amenities, and the surrounding area provide a realistic preview of the experience.
 - Social Media Integration: Links to the hotel’s social media pages open in new tabs, allowing users to stay connected without losing their place on the site.
+
+#### Future Features
+
+I would like to implement the following features:
+
+- Automated Price Calculation for each reservation.
+- Online payment options
+- Administrative Tools to track and manage the number of reserved rooms relative to the total room pool.
+- Excel Integration to automatically calculate and report hotel profits.
+- Virtual Assistant Integration to enhance guest interaction and support.
+- Multilingual Support to accommodate users in multiple languages.
 
 ### User Stories
 
@@ -357,6 +368,7 @@ NOTO
 - sycopg2
 - Balsamiq
 - CodeInstitute Database
+- Mizframa - Mockup generator app
 
 ### DATABASE DESIGN
 - FOR ROOM RESERVATION
@@ -423,7 +435,6 @@ Deployment steps are as follows, after account setup:
 
 | Key | Value |
 | --- | --- |
-| `CLOUDINARY_URL` | user's own value |
 | `DATABASE_URL` | user's own value |
 | `DISABLE_COLLECTSTATIC` | 1 (*this is temporary, and can be removed for the final deployment*) |
 | `SECRET_KEY` | user's own value |

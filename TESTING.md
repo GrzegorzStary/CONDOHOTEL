@@ -277,6 +277,25 @@ Each user story has been fulfilled.
 | As the site owner, I want to edit or delete guests reviews. | ![screenshot](documentation/images/user_stories/site_owner/site_owner4.1.png), ![screenshot](documentation/images/user_stories/site_owner/site_owner4.2.png), ![screenshot](documentation/images/user_stories/site_owner/site_owner4.3.png), ![screenshot](documentation/images/user_stories/site_owner/site_owner4.4.png) |
 | As the site owner, I want to see messages that potential guests left by using our contact form. | ![screenshot](documentation/images/user_stories/site_owner/site_owner5.1.png), ![screenshot](documentation/images/user_stories/site_owner/site_owner5.2.png), ![screenshot](documentation/images/user_stories/site_owner/site_owner5.3.png), ![screenshot](documentation/images/user_stories/site_owner/site_owner5.4.png) |
 
+### BUGS
+
+Throughout the development process, I encountered numerous bugs in my code. While it would be difficult to detail all of them here, I will highlight a few notable examples.
+
+- Reservation Form Validation: Prevented users from selecting a check-in date in the past or a check-out date earlier than the check-in.
+
+- Tab Title Formatting: Standardized tab title structure across all pages by adding a missing " - " (dash and space).
+About Page Layout: Corrected a custom CSS class error that caused the button to stick to the footer.
+
+- Form Layout: Fixed a typo that caused the submit button to align left instead of remaining centered.
+Responsive Navigation: Repaired a broken Bootstrap link that prevented the hamburger menu from functioning on smaller screens.
+
+- My Booking View Layout: Fixed layout issues for small screens to ensure proper responsiveness.
+
+- 404 Page Display: Resolved an issue that prevented the custom 404 page from displaying correctly.
+
+- Review Template Image: Corrected the image source reference to use the appropriate variable in the review template.
+
+
 ## README
 
 Go back to the [README.md](README.md).
