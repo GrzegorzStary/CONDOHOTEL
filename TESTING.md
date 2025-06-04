@@ -144,6 +144,37 @@ I have tested my site on different devices and screen sizes to check for any res
 | Samsung X Cover Pro 6| Our Rooms 2 | ![screenshot](documentation/images/responsivness/Samsung_xcover_pro/xcover3.jpg) | Works as expected |
 | Samsung X Cover Pro 6| Our Rooms 3 | ![screenshot](documentation/images/responsivness/Samsung_xcover_pro/xcover4.jpg) | Works as expected |
 
+### Real User Experience Testing. 
+
+To complete real-world testing, I shared my website with a few older people who have basic computer experience.
+
+![photo](documentation/images/tests_on_humans/human1.jpg)
+![photo](documentation/images/tests_on_humans/human2.jpg)
+![photo](documentation/images/tests_on_humans/human3.jpg)
+![photo](documentation/images/tests_on_humans/human4.jpg)
+![photo](documentation/images/tests_on_humans/human5.jpg)
+![photo](documentation/images/tests_on_humans/human6.jpg)
+
+I also asked one of my guests to review the website for me.
+
+![photo](documentation/images/tests_on_humans/human7.png)
+
+There was also one user experience story at the very beginning of testing.
+
+The story went as follows:
+My original idea for the main button in the center of the carousel was to redirect potential guests to the booking section as quickly as possible. So, the button was labeled BOOK NOW!
+
+Later on, a person who was exploring the website told my wife that they would prefer to first see the rooms we have available. That would provide a better experience for them.
+
+This is why I changed the BOOK NOW button to OUR ROOMS!
+Now, the user is redirected to the available rooms section, where they can view the options and book the one they like.
+
+I thought this was a good idea, so I made the changes on the website accordingly.
+
+Below is the evidence of the user experience feedback, as well as my wife's confirmation that the website has been updated accordingly.
+
+![photo](documentation/images/tests_on_humans/human8.jpg)
+
 ## Lighthouse
 
 I've tested my deployed project using the Lighthouse tool to check for issues.
