@@ -283,17 +283,6 @@ Each user story has been fulfilled.
 | As a returning user, I want to edit or delete the booking. | ![screenshot](documentation/images/user_stories/returning_user/returning_user4.1.png), ![screenshot](documentation/images/user_stories/returning_user/returning_user5.1.png) |
 | As a returning user, I want to leave the honest review about my stay. | ![screenshot](documentation/images/user_stories/returning_user/returning_user6.1.png), ![screenshot](documentation/images/user_stories/returning_user/returning_user6.2.png), ![screenshot](documentation/images/user_stories/returning_user/returning_user6.3.png) |
 
-### Returning User
-
-| User Story | Screenshot |
-| --- | --- |
-| As a returning user, I want to quickly view the hotel’s location and nearby points of interest. | ![screenshot]() |
-| As a returning user, I want an easy way to contact the hotel for questions or updates to my booking. | ![screenshot](), ![screenshot]()|
-| As a returning user, I want to find and follow the condo hotel on social media to stay updated on news and special offers. | ![screenshot](), ![screenshot]() |
-| As a returning user, I want to find my booking. | ![screenshot]() |
-| As a returning user, I want to edit or delete the booking. | ![screenshot]() |
-| As a returning user, I want to leave the honest review about my stay. | ![screenshot](), ![screenshot](), ![screenshot](), ![screenshot](), ![screenshot]() |
-
 ### Site Owner
 
 | User Story | Screenshot |
