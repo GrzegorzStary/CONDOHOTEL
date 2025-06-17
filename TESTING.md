@@ -175,6 +175,16 @@ Below is the evidence of the user experience feedback, as well as my wife's conf
 
 ![photo](documentation/images/tests_on_humans/human8.jpg)
 
+The last person who tested my website was my classmate David. Please see below for some screenshots of the website, along with his feedback.
+
+![screenshot](documentation/images/tests_on_humans/david/screenshot.png)
+![signup](documentation/images/tests_on_humans/david/signup.png)
+![signin](documentation/images/tests_on_humans/david/signin.png)
+![signout](documentation/images/tests_on_humans/david/Signout.png)
+![booking](documentation/images/tests_on_humans/david/Booking.png)
+![reservation](documentation/images/tests_on_humans/david/reservation.png)
+![delete](documentation/images/tests_on_humans/david/Deletation.png)
+
 ## Lighthouse
 
 I've tested my deployed project using the Lighthouse tool to check for issues.
