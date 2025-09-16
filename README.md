@@ -513,7 +513,7 @@ You can clone the repository by following these steps:
 
 Alternatively, if using Gitpod, you can click below to create your own workspace using this repository.
 
-[![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/#https://github.com/adamshaw90/Trip-easy)
+[![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://github.com/GrzegorzStary/CONDOHOTEL)
 
 Please note that in order to directly open the project in Gitpod, you need to have the browser extension installed.
 A tutorial on how to do that can be found [here](https://www.gitpod.io/docs/configure/user-settings/browser-extension).
